@@ -1,0 +1,41 @@
+body {
+  font-family: "Noto Sans JP";
+}
+
+.u-desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .u-desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .u-mobile {
+    display: none;
+  }
+}
+
+body {
+  position: relative;
+}
+
+.pagetop {
+  width: 76.8px;
+  width: 4.8rem;
+  max-width: 100%;
+  position: fixed;
+  bottom: 25.6px;
+  bottom: 1.6rem;
+  right: 0;
+  padding-right: 15px;
+  z-index: 10;
+}
+@media screen and (min-width: 768px) {
+  .pagetop {
+    width: 8rem;
+    padding-right: 25px;
+  }
+}
+/*# sourceMappingURL=pagetop.css.map */

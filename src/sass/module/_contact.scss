@@ -1,0 +1,142 @@
+@use "global" as *;
+
+.contact {
+  margin-top: 8rem;
+
+  @include mq('md') {
+    margin-top: 14rem;
+    
+  }
+}
+
+
+.contact__inner {
+  padding: 0 3rem;
+
+  @include mq('md') {
+    width: $inner;
+    max-width: 100%;
+    padding: 0 $padding-pc;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+.contact__block {
+
+  @include mq('md') {
+    display: flex;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    padding: 6.5rem 8rem 10.15rem 8rem;
+    
+  }
+
+}
+
+.contact__logo-group {
+  @include mq('md') {
+    margin-right: 8.2rem;
+    border-right: 1px solid $accent-color;
+  }
+}
+
+
+.contact__logo {
+  width: 17.4rem;
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contact__address-group {
+  text-align: center;
+  border-top: 1px solid $accent-color;
+
+  @include mq('md') {
+    display: flex;
+    margin-right: 4rem;
+
+  }
+}
+
+.contact__address-info {
+  margin-top: 1.6rem;
+
+  @include mq('md') {
+    margin-right: 2.1rem;
+  }
+}
+
+.contact__address-detail {
+  font-size: 1.6rem;
+  font-weight: $normal;
+  line-height: 2.4rem;
+  margin-top: 0.4rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.contact__address-map {
+  margin-top: 1.6rem;
+
+  @include mq('md') {
+    width: 27.3rem;
+    max-width: 100%;
+
+  }
+}
+
+.contact__inquiry {
+  margin-top: 4rem;
+  text-align: center;
+
+  @include mq('md') {
+    margin-top: 2rem;
+  }
+}
+
+.contact__section-title {
+  font-size: 8rem;
+  font-weight: $normal;
+  font-family: $second-font-family;
+  line-height: 8rem;
+
+  &::first-letter {
+    color: $accent-color;
+  }
+}
+
+.contact__section-subtitle {
+  font-size: 1.2rem;
+  color: $accent-color;
+  font-weight: $normal;
+  line-height: 1.8rem;
+  margin-top: -0.4rem;
+}
+
+.contact__inquiry-text {
+  font-size: 1.4rem;
+  font-weight: $normal;
+  color: $accent-color;
+  margin-top: 0.8rem;
+}
+
+.contact__inquiry--button {
+  margin-top: 4rem;
+}
+.contact__background-image{//微調整が必要
+      display: none;
+    @include mq('md'){
+      display: block;
+      position: absolute;
+      top: -4rem;
+      right: -10rem ;
+      max-width: 100%;
+      width: 30.1rem;
+      max-width: 100%;
+      aspect-ratio: 301/138;
+      mix-blend-mode: multiply;
+       }
+  }

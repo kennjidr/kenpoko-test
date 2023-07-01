@@ -1,0 +1,104 @@
+@use "global" as *;
+
+.price{
+   padding: 8rem 0 ;
+   margin-top: 8rem;
+   background-color: $background-color;
+   
+}
+
+.price__inner{
+   padding: 0 $padding-sp ;//1.5rem
+   position: relative;
+    @include mq('md'){
+      display: flex;
+      width: 107.7rem;
+      max-width: 100%;
+      padding: 0  $padding-pc;
+      margin: 0 auto;
+      margin-top: 4rem;
+      transform: translateX(-1.25rem);//1077px/右余白+125px =125/1077=8.616%
+    
+      }
+}
+.price__inner ::after{
+    @include mq('md'){
+       
+       content: "";
+       position: absolute;
+       background-image: url(/images/kingyohanadai_blog-PC.png);
+       background-size: cover;
+   max-width: 100%;
+   width: 43.7rem;
+   height: 20.1rem;
+   bottom:  -20.6rem;
+   left: -6rem;
+   z-index: 3;
+}
+}
+
+
+
+.price__image-sp{
+   margin-top: 2.4rem;
+}
+
+.price__image-sp img {//746px
+    max-width: 100%;
+}
+
+.price-list {
+ @include mq('md'){
+    margin-right: 9.3rem;
+    flex: 0 0 45.68245%;
+   }
+}
+
+.price-course__title {
+font-size: 1.6rem;
+font-weight: $bold;
+line-height: 2.4rem;
+display: block;
+margin-top: 4rem;
+margin-bottom: 0.4rem;
+border-bottom: 1px solid $accent-color;
+ @include mq('md'){
+    &:first-child{
+      margin-top: 0;
+    }
+   }
+}
+
+.price-course__items {
+display: flex;
+justify-content: space-between;
+margin-top: 0.8rem;
+font-size: 1.4rem;
+font-weight: $normal;
+line-height: 2.4rem;
+}
+
+.price-course__item-name {
+
+}
+
+.price-course__item-price {
+
+}
+
+.price-image-pc {
+ @include mq('md'){//746px
+    flex: 0 1  69.45218%;
+    margin-right: 20rem ;
+   }
+}
+
+.price__button{
+   text-align: center;
+   margin-top: 4rem;
+    @include mq('md'){
+       margin-top: 8.7rem;
+      }
+}
+
+

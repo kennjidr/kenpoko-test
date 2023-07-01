@@ -1,0 +1,169 @@
+@use "global" as *;
+
+.footer {
+  background-color: $accent-color;
+  margin-top: 10rem;
+}
+.footer__inner {
+  padding: 0 $padding-sp; //1.5rem
+  max-width: 100%;
+  width: 50rem;
+  margin: 0 auto;
+   @include mq('md'){
+    width: 108rem; 
+   }
+}
+
+.logo__block{
+   @include mq('md'){
+     display: flex;
+     align-items: flex-end;
+     }
+}
+.footer__logo {
+  width: 12rem;
+  max-width: 100%;
+   @include mq('md'){
+      width: 20rem;
+      max-width: 100%;
+     }
+}
+.head__logo {
+  display: block;
+  padding-top: 4.8rem;
+  @include mq('md'){
+      margin-right: 4rem;
+     }
+}
+
+.footer__sns-icon {
+  display: flex;
+  margin-top: 1rem;
+   @include mq('md'){
+   }
+}
+
+
+.icon-facebook {
+max-width: 2.4rem;
+width: 100%;
+margin-right: 1.5rem;
+}
+
+.icon-instagram {
+max-width: 2.4rem;
+width: 100%;
+}
+
+.footer-menu {}
+
+.navigation__menu {
+  font-size: 1.6rem;
+  color: $white;
+  line-height: 1.8rem;
+  font-weight: $normal;
+  display: flex;
+  justify-content: space-between;//marjin 0 auto;で中央寄せができず、flex:centerは感覚が狭い。
+   @include mq('md'){
+     justify-content: normal ; 
+     }
+
+}
+
+.navigation_menu-title{
+  font-size: 1.6rem;
+  font-weight: $bold;
+  line-height: 1.8rem;
+  margin-top: 4rem;
+}
+
+.navigation_menu-title::before {
+  content: '';
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  background-image: url(/images/star-fish.png);
+  background-size: contain;
+  top: 0;
+  left: 0;
+  transform: translateY(0.1rem);
+}
+
+
+.navigation__menu-campaign li{
+  text-indent: 2.2rem;
+  margin-top: 2.4rem;
+}
+
+
+.navigation_menu-title li{
+  text-indent: 2.2rem;
+  margin-top: 2.4rem;
+}
+.navigation__menu-price li{
+  text-indent: 2.2rem;
+  margin-top: 2.4rem;
+}
+
+.navigation__menu-about {}
+
+
+.navigation__menu-infomation li{
+  text-indent: 2.2rem;
+  margin-top: 2.4rem;
+}
+
+.navigation__menu-blog {
+
+}
+.navigation__menu-coulmn-left{
+   @include mq('md'){
+      display: flex;
+    }
+}
+.navigation__menu-coulmn-right {
+   @include mq('md'){
+      display: flex;
+     }
+}
+
+.navigation__menu-coulmn-first{
+   @include mq('md'){
+      margin-right: 11rem;
+     }
+}
+.navigation__menu-coulmn-second {
+  @include mq('md'){
+    margin-right: 11rem;
+   }
+
+}
+.navigation__menu-coulmn-third {
+  @include mq('md'){
+    margin-right: 11rem;
+   }
+
+}
+.navigation__menu-coulmn-fourth {
+  @include mq('md'){
+    margin-right: 11rem;
+   }
+
+}
+.navigation__menu-privacy-policy{
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+ 
+}
+.navigation__menu-voice {}
+
+.navigation__menu-price {}
+
+.footer__copyright {
+ font-size: 1.2rem;
+ color: $white;
+ line-height: 1.8rem;
+ text-align: center;
+ margin-top: 4rem;
+ padding-bottom: 5.6rem;
+}

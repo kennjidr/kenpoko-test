@@ -1,0 +1,233 @@
+@charset "UTF-8";
+body {
+  font-family: "Noto Sans JP";
+}
+
+.u-desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .u-desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .u-mobile {
+    display: none;
+  }
+}
+
+.voice {
+  margin-top: 128px;
+  margin-top: 8rem;
+}
+@media screen and (min-width: 768px) {
+  .voice {
+    margin-top: 14rem;
+  }
+  .voice:after {
+    content: "";
+    display: inline-block;
+    background: url(/images/_キンギョハナダイ-left-big.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: -45px;
+  }
+}
+
+.voice-card__inner {
+  margin: 0 auto;
+  margin-top: 64px;
+  margin-top: 4rem;
+  padding: 0 15px;
+}
+@media screen and (min-width: 768px) {
+  .voice-card__inner {
+    width: 108rem;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 3rem;
+    padding: 0 25px;
+    padding-bottom: 2.4rem;
+  }
+}
+
+.voice-card {
+  display: block;
+  padding: 15px;
+  -webkit-box-shadow: 0 0 8px #F2F2F2;
+          box-shadow: 0 0 8px #F2F2F2;
+}
+@media screen and (min-width: 768px) {
+  .voice-card:first-child {
+    margin-right: 4rem;
+  }
+}
+
+.voice-card__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+  .voice-card__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.voice-card__group {
+  padding-right: 24px;
+  padding-right: 1.5rem;
+}
+.voice-card__personal {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+@media screen and (min-width: 768px) {
+  .voice-card__personal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+.voice-card__category {
+  display: inline-block;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #408F95;
+  padding: 6.4px 19.2px;
+  padding: 0.4rem 1.2rem;
+  border: 1px solid #408F95;
+}
+
+.voice-card__title {
+  font-size: 25.6px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 36.8px;
+  line-height: 2.3rem;
+  margin-bottom: 6.4px;
+  margin-bottom: 0.4rem;
+  border-bottom: 1px solid #408F95;
+}
+@media screen and (min-width: 768px) {
+  .voice-card__title {
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+    margin-top: 0.8rem;
+  }
+}
+
+.voice-card__image img {
+  aspect-ratio: 151/117;
+  min-width: 241.6px;
+  min-width: 15.1rem;
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.voice-card__text {
+  font-size: 25.6px;
+  font-size: 1.6rem;
+  padding-top: 25.6px;
+  padding-top: 1.6rem;
+}
+@media screen and (min-width: 768px) {
+  .voice-card__text {
+    padding-top: 4rem;
+    line-height: 2.4rem;
+  }
+}
+
+.voice-card a {
+  width: 532.8px;
+  width: 33.3rem;
+  max-width: 100%;
+  margin-top: 38.4px;
+  margin-top: 2.4rem;
+  margin: 0 33.6px;
+  margin: 0 2.1rem;
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, .2509803922);
+          box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, .2509803922);
+}
+@media screen and (min-width: 768px) {
+  .voice-card a {
+    width: 52rem;
+    max-width: 100%;
+  }
+}
+
+.voice-card:nth-child(n+1) {
+  margin-top: 64px;
+  margin-top: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .voice-card:nth-child(n+1) {
+    margin-top: 0;
+  }
+}
+
+.voice-card__inner {
+  padding: 0 33.6px;
+  padding: 0 2.1rem;
+}
+
+.voice-card__image img {
+  aspect-ratio: 301/201;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 241.6px;
+  width: 15.1rem;
+  height: auto;
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .voice-card__image img {
+    aspect-ratio: 180/140;
+    width: 18rem;
+    height: auto;
+  }
+}
+
+.voice-card__info {
+  color: #0D2936;
+}
+
+.voice-card__date {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "Gotu";
+  line-height: 28.8px;
+  line-height: 1.8rem;
+  margin-top: 38.4px;
+  margin-top: 2.4rem;
+}
+
+.voice__button {
+  text-align: center;
+  margin-top: 64px;
+  margin-top: 4rem;
+}
+/*# sourceMappingURL=page-top.css.map */

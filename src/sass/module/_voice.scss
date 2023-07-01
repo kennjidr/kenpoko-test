@@ -1,0 +1,174 @@
+@use "global" as *;
+
+.voice{
+  margin-top: 8rem;
+   @include mq('md'){
+      margin-top: 14rem;
+      &:after {
+        content: "";
+        display: inline-block;
+        background: url(/images/_キンギョハナダイ-left-big.png);
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: -45px;
+    }
+
+
+
+     }
+}
+.voice-card__inner{
+margin: 0 auto;
+margin-top: 4rem;
+padding: 0 $padding-sp;//1.5rem
+ @include mq('md'){
+  width: 108rem;
+  max-width: 100%;
+  display: flex;
+  margin-top: 3rem;
+  padding: 0 $padding-pc;//2.0rem
+  padding-bottom: 2.4rem;
+  }
+}
+
+.voice-card {
+  display: block;
+  padding: $padding-sp;//1.5rem
+  box-shadow: 0 0 8px $shadow-color;
+  
+  &:first-child{
+     @include mq('md'){
+        margin-right: 4rem;
+      }
+  }
+}
+
+
+.voice-card__main{
+  display: flex;
+  align-items: flex-end;
+  
+}
+.voice-card__info{
+    @include mq('md'){
+   display: flex;
+   justify-content: space-between;
+ }
+}
+.voice-card__group{
+  padding-right: 1.5rem;
+   @include mq('md'){
+      
+     }
+}
+.voice-card__personal{
+font-size: 1.2rem;
+font-weight: $normal;//400
+line-height: 1.8;
+ @include mq('md'){
+  display: flex;
+  align-items: flex-end;
+   }
+}
+
+.voice-card__category{
+display: inline-block;
+font-size: 1.2rem;
+font-weight: $normal;//400
+color: $accent-color;
+padding: 0.4rem 1.2rem;
+border: 1px solid $accent-color;
+}
+
+.voice-card__title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.3rem;
+  margin-bottom: 0.4rem;
+  border-bottom: 1px solid $accent-color;
+   @include mq('md'){
+      font-size: 2.4rem;
+      line-height: 3.5rem;
+      margin-top: 0.8rem;
+     }
+}
+.voice-card__image img{
+  aspect-ratio:  151 / 117;
+  min-width: 15.1rem;
+  max-width:100%;
+  vertical-align: bottom;
+}
+
+
+.voice-card__text {
+  font-size: 1.6rem;
+  padding-top: 1.6rem;
+   @include mq('md'){
+      padding-top: 4rem;
+      line-height: 2.4rem;
+     }
+
+
+}
+
+.voice-card a {
+  width: 33.3rem;
+  max-width: 100%;
+  margin-top: 2.4rem;
+  margin: 0 2.1rem;
+  box-shadow: 2px 2px 10px 0px #00000040;
+   @include mq('md'){
+      width: 52rem;
+      max-width: 100%;
+    }
+ }
+
+ .voice-card:nth-child(n+1) {
+   margin-top: 4rem;
+  @include mq('md'){
+    margin-top: 0;
+   } 
+}
+
+.voice-card__inner {
+  padding: 0 2.1rem;
+}
+
+.voice-card__image {
+ }
+
+.voice-card__image img {
+  aspect-ratio: 301/201;
+  object-fit: cover;
+  width: 15.1rem;//1rem=10px
+  height: auto;
+  max-width: 100%;
+   @include mq('md'){
+    aspect-ratio: 180/140;
+    width: 18rem;
+    height: auto;
+   }
+}
+
+
+
+.voice-card__info {
+  color: $font-color;
+}
+
+.voice-card__date {
+  font-size: 1.2rem;
+  font-weight: $normal;
+  font-family: $second-font-family;
+  line-height: 1.8rem;
+  margin-top: 2.4rem;
+}
+
+
+.voice__button {
+  text-align: center;
+  margin-top: 4rem;
+
+}

@@ -1,0 +1,103 @@
+@use "global" as *;
+
+.about {
+margin-top: 8rem;
+}
+
+.about-section{
+  text-align: right;
+  }
+  
+
+.about__inner{
+  padding: 0 $padding-sp;//1.5rem
+   @include mq('md'){
+     position: relative; 
+     width: $inner;
+     max-width: 100%;
+     paddding:0 $padding-pc;
+     margin: 0 auto;
+  }
+}
+
+.about__images{
+ position: relative;
+ max-width: 100%;
+ aspect-ratio: 345/213;
+ margin-top: 2.3rem; 
+}
+
+.about__image-left {
+ position: absolute;
+ top: 0;
+ left: 0;
+ aspect-ratio: 128/194;
+ max-width: 37.1014492753%;
+ width: 100%;
+}
+
+.about__image-right {
+position: absolute;
+bottom: 0;
+right: 0;
+aspect-ratio: 281 / 186;
+max-width: 81.4492753623%;
+width: 100%;
+z-index: -1;
+}
+
+.about__info {
+margin-top: 4.0rem;
+ @include mq('md'){
+   display: flex;
+   position: absolute;
+   top: 20rem;
+   left: 19.9rem;
+   }
+}
+
+
+.about__title {
+  color: $accent-color;
+  font-size: 4.0rem;
+  font-family: $second-font-family;
+  line-height: 4.0rem;
+   @include mq('md'){
+      font-size: 8rem;
+      color: $white;
+      max-width: 100%;
+      margin-right: 4rem;
+      line-height: 10rem;
+     }
+}
+
+.about__text {
+  margin-top: 1.6rem;
+  color: $base-font-family;
+  font-size: 1.6rem;
+  font-family: $base-font-family;
+  line-height: 2.4rem;
+  @include mq('md'){
+    color: $white; 
+    max-width: 40rem ;
+    }
+}
+
+.about__button{
+margin-top: 4rem;
+text-align: center;
+}
+
+.about__background-image{//微調整が必要
+  display: none;
+  @include mq('md'){
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0 ;
+    max-width: 100%;
+    width: 19.4rem;
+    aspect-ratio: 194/181;
+    mix-blend-mode: multiply;
+     }
+}
