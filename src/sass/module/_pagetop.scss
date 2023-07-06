@@ -1,4 +1,7 @@
 @use "global" as *;
+body{
+  position: relative;
+}
 
 .pagetop {
   max-width: 100%;
@@ -6,10 +9,12 @@
   position: fixed;
   bottom:  1.6rem;
   right: 0;
-  margin-right: $padding-sp;
+  margin-right: 1.6rem;
+  margin-bottom: 1.6rem;
   z-index: 10;
    @include mq('md'){
      width: 8rem;
-     padding-right: $padding-pc; 
+     margin-bottom: 2rem;
+     margin-right: 2rem; 
      }
 }

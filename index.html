@@ -10,6 +10,8 @@
   <title>CodeUps</title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
+  <!-- ベーシック認証 -->
+  <meta name="robots" content="noindex"> 
   <!-- ogp -->
   <meta property="og:title" content="" />
   <meta property="og:type" content="" />
@@ -33,9 +35,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <!-- jquery.inview.min.jsが下 -->
-<script type="text/javascript" src="./js/jquery.inview.min.js"></script>
-  <script defer src="./js/script.js"></script>
+  <script src="/js/jquery.inview.min.js"></script>
+  <script defer src="/js/script.js"></script>
 </head>
+
 <body>
   <!-- header -->
   <section class="header">
@@ -45,6 +48,7 @@
           <img src="/images/CodeUps-logo-white.svg" alt="合同会社codeups">
         </a>
       </h1>
+
       <div class="header__navigation-menu navigation-items">
         <a href="#" class="navigation-item">
           <div class="item-title">Campaign</div>
@@ -77,7 +81,7 @@
         </a>
         <a href="#" class="navigation-item">
           <div class="item-title">Contact</div>
-          <div class="item-subtitle">お問合せ</div>
+          <div class="item-subtitle">お問い合わせ</div>
         </a>
       </div>
       <button class="header__drawer js-hamburger">
@@ -88,6 +92,7 @@
         </div>
       </button>
       <div class="js-drawer-menu drawer-menu navigation__menu">
+        <div class="drawer-menu__box">
           <!-- navigation__menu-coulmn-left -->
           <div class="navigation__menu-coulmn-left">
             <!-- navigation__menu-coulmn-first -->
@@ -101,7 +106,7 @@
                 <li><a href="#">ナイトダイビング</a></li>
               </ul>
               <h3 class="navigation_menu-title navigation__menu-about">
-                <a href="#">私達について</a>
+                <a href="#">私たちについて</a>
               </h3>
             </div> <!-- navigation__menu-coulmn-first -->
             <!-- navigation__menu-coulmn-second -->
@@ -147,37 +152,38 @@
                 <a href="">利用規約</a>
               </h3>
               <h3 class="navigation_menu-title navigation__menu-contact">
-                <a href="#">おい問わ合せ</a>
+                <a href="#">お問い合わせ</a>
               </h3>
             </div><!-- navigation__menu--coulmn-fourth -->
           </div><!-- navigation__menu-coulmn-right -->
         </div><!-- navigation__menu -->
-      </div>
+      </div><!-- drawer__menu-box -->
+    </div>
   </section><!-- header -->
-
+  
   <!-- main-visual -->
   <section class="main-visual">
     <div class="main-visual__text">
       <div class="main-visual-title">DIVING</div>
-      <div class="main-visual-subtitle">into the OCEAN</div>
+      <div class="main-visual-subtitle">into the ocean</div>
     </div>
     <div class="swiper-container swiper-first-view">
       <div class="swiper-wrapper">
         <div class="swiper-slide main-visual-image">
-          <img class="u-desktop" src="/images/FV.png" alt="">
-          <img class="u-mobile" src="/images/MV-sp.png" alt="">
+          <img class="u-desktop" src="/images/FV.png" alt="海中のカメ">
+          <img class="u-mobile" src="/images/MV-sp.png" alt="海中のカメ">
         </div>
         <div class="swiper-slide main-visual-image">
-          <img class="u-desktop" src="/images/FV2.png" alt="">
-          <img class="u-mobile" src="/images/MV-sp2.png" alt="">
+          <img class="u-desktop" src="/images/FV2.png" alt="ダイバーとカメ">
+          <img class="u-mobile" src="/images/MV-sp2.png" alt="ダイバーとカメ">
         </div>
         <div class="swiper-slide main-visual-image">
-          <img class="u-desktop" src="/images/FV3.png" alt="">
-          <img class="u-mobile" src="/images/MV-sp3.png" alt="">
+          <img class="u-desktop" src="/images/FV3.png" alt="海上の船と島々">
+          <img class="u-mobile" src="/images/MV-sp3.png" alt="海上の船と島々">
         </div>
         <div class="swiper-slide main-visual-image">
-          <img class="u-desktop" src="/images/FV4.png" alt="">
-          <img class="u-mobile" src="/images/MV-sp4.png" alt="">
+          <img class="u-desktop" src="/images/FV4.png" alt="海辺と砂浜">
+          <img class="u-mobile" src="/images/MV-sp4.png" alt="海辺と砂浜">
         </div>
       </div><!-- /.swiper-wrapper -->
     </div><!-- /.swiper-container -->
@@ -192,6 +198,86 @@
       <div class="campaign__cards">
         <div class="swiper-container campaign__swiper-container"><!-- campaign__swiper-containerにjsコードを記述する -->
           <div class="swiper-wrapper">
+            <div class="swiper-slide"> <!-- campaign__card 1 -->
+              <div class="card__boxshadow">
+                <a href="#" class="campaign__card">
+                  <div class="campaign__card-img"><img src="/images/campaign1.png" alt="色彩豊かな魚群"></div>
+                  <div class="campaign__card__inner">
+                    <div class="campaign__info">
+                      <div class="campaign__category">ライセンス講習</div>
+                      <div class="campaign__title">ライセンス取得</div>
+                    </div>
+                    <div class="campaign__price-info">
+                      <div class="campaign__price-detail">全部コミコミ(お一人様)</div>
+                      <div class="campaign__price_figures">
+                        <div class="campaign__original-price">￥56,000</div>
+                        <div class="campaign__discount-price">￥46,000</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide"><!-- campaign__card 2 -->
+              <div class="card__boxshadow">
+                <a href="#" class="campaign__card">
+                  <div class="campaign__card-img"><img src="/images/campaign2.png" alt="エメラルドグリーンの海と船"></div>
+                  <div class="campaign__card__inner">
+                    <div class="campaign__info">
+                      <div class="campaign__category">体験ダイビング</div>
+                      <div class="campaign__title">貸切体験ダイビング</div>
+                    </div>
+                    <div class="campaign__price-info">
+                      <div class="campaign__price-detail">全部コミコミ(お一人様)</div>
+                      <div class="campaign__price_figures">
+                        <div class="campaign__original-price">¥24,000</div>
+                        <div class="campaign__discount-price">¥18,000</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide"><!-- campaign__card3 -->
+              <div class="card__boxshadow">
+                <a href="#" class="campaign__card">
+                  <div class="campaign__card-img"><img src="/images/campaign3.png" alt="深海のクラゲ群"></div>
+                  <div class="campaign__card__inner">
+                    <div class="campaign__info">
+                      <div class="campaign__category">体験ダイビング</div>
+                      <div class="campaign__title">ナイトダイビング</div>
+                    </div>
+                    <div class="campaign__price-info">
+                      <div class="campaign__price-detail">全部コミコミ(お一人様)</div>
+                      <div class="campaign__price_figures">
+                        <div class="campaign__original-price">¥10,000</div>
+                        <div class="campaign__discount-price">¥8,000</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide"> <!-- campaign__card4 -->
+              <div class="card__boxshadow">
+                <a href="#" class="campaign__card">
+                  <div class="campaign__card-img"><img src="/images/campaign4.png" alt="海面のダイバー達"></div>
+                  <div class="campaign__card__inner">
+                    <div class="campaign__info">
+                      <div class="campaign__category">ファンダイビング</div>
+                      <div class="campaign__title">貸切ファンダイビング</div>
+                    </div>
+                    <div class="campaign__price-info">
+                      <div class="campaign__price-detail">全部コミコミ(お一人様)</div>
+                      <div class="campaign__price_figures">
+                        <div class="campaign__original-price">¥20,000</div>
+                        <div class="campaign__discount-price">¥16,000</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
             <div class="swiper-slide"> <!-- campaign__card 1 -->
               <div class="card__boxshadow">
                 <a href="#" class="campaign__card">
@@ -259,7 +345,7 @@
                   <div class="campaign__card__inner">
                     <div class="campaign__info">
                       <div class="campaign__category">ファンダイビング</div>
-                      <div class="campaign__title">貸切体験ダイビング</div>
+                      <div class="campaign__title">貸切ファンダイビング</div>
                     </div>
                     <div class="campaign__price-info">
                       <div class="campaign__price-detail">全部コミコミ(お一人様)</div>
@@ -274,14 +360,25 @@
             </div>
           </div><!-- /.swiper-wrapper -->
         </div><!-- /swiper-container campaign__swiper-container -->
-        <div class="swiper-button-next u-desktop"></div> <!-- 前後の矢印　 -->
-        <div class="swiper-button-prev u-desktop"></div>
+        <div class="swipwer__button-box">
+          <div class="swiper-button-next u-desktop"></div> <!-- 前後の矢印　 -->
+          <div class="swiper-button-prev u-desktop"></div>
+        </div>
       </div><!-- /campaign__cards -->
     </div> <!-- /campaign__inner -->
-    <div class="price__button">
-      <a href="#" class="button">view more</a>
+    <div class="campaign__button">
+      <div class="button__box">
+        <a href="#" class="button">
+          <span class="button__text">view more</span>
+          <span class="button__border"></span>
+        </a>
+      </div>
     </div>
+
+
+
   </section><!-- campaign -->
+
 
   <section class="about">
     <div class="about-section section">
@@ -291,10 +388,10 @@
     <div class="about__inner">
       <div class="about__images">
         <figure class="about__image-left">
-          <img src="/images/ocean-left-pc.png" alt="about-image-left">
+          <img src="/images/ocean-left-pc.png" alt="快晴と屋根の上のシーサー">
         </figure>
         <figure class="about__image-right">
-          <img src="/images/ocean-right-pc.png" alt="about-image-right">
+          <img src="/images/ocean-right-pc.png" alt="海中に映る二匹の黄色い魚">
         </figure>
       </div>
       <div class="about__info">
@@ -310,12 +407,14 @@
             ここにテキスト
           </p>
           <div class="about__button">
-            <a href="#" class="button">view more</a>
+            <div class="button__box">
+              <a href="#" class="button">
+                <span class="button__text">view more</span>
+                <span class="button__border"></span>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="about__background-image">
-        <img src="/images/_サンゴとイソギンチャク.png" alt="サンゴとイソギンチャク">
       </div>
     </div>
   </section>
@@ -326,7 +425,7 @@
       <p class="section-subtitle">ダイビング情報</p>
     </div>
     <div class="information__inner">
-      <figure class="information__image information-colorobox">
+      <figure class="information__image colorbox">
         <img src="/images/information.png" alt="ダイビング情報">
       </figure>
       <div class="information__info">
@@ -336,7 +435,12 @@
           正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。
         </p>
         <div class="imformation__button">
-          <a href="#" class="button">View more</a>
+          <div class="button__box">
+            <a href="#" class="button">
+              <span class="button__text">view more</span>
+              <span class="button__border"></span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -346,7 +450,7 @@
   <section class="blog">
     <div class="blog-section section">
       <h2 class="section-title__whtie">Blog</h2>
-      <p class="section-subtitle__whtie">ブログ</p>
+      <p class="section-subtitle__white">ブログ</p>
     </div>
     <div class="blog__inner">
 
@@ -354,13 +458,13 @@
         <a href="#" class="card">
           <div class="card__inner">
             <figure class="card__image">
-              <img src="/images/blog-card1.png" alt="ブログ紹介1">
+              <img src="/images/blog-card1.png" alt="サンゴ">
             </figure>
             <div class="card__info">
-              <time class="card__date" time datetime="2023-11-17">2023.11/17</time>
+              <time class="card__date" time datetime="2023-11-17">2023/11/17</time>
               <h3 class="card__title">ライセンス取得</h3>
-              <p class="card__text">ここにテキストが入ります。
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+              <p class="card__text">
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
                 ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
             </div>
           </div>
@@ -368,13 +472,13 @@
         <a href="#" class="card">
           <div class="card__inner">
             <figure class="card__image">
-              <img src="/images/blog-card1.png" alt="ブログ紹介1">
+              <img src="/images/blog-card2.png" alt="海の中のカメ">
             </figure>
             <div class="card__info">
-              <time class="card__date" time datetime="2023-11-17">2023.11/17</time>
-              <h3 class="card__title">ライセンス取得</h3>
-              <p class="card__text">ここにテキストが入ります。
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+              <time class="card__date" time datetime="2023-11-17">2023/11/17</time>
+              <h3 class="card__title">ウミガメと泳ぐ</h3>
+              <p class="card__text">
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
                 ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
             </div>
           </div>
@@ -382,13 +486,13 @@
         <a href="#" class="card">
           <div class="card__inner">
             <figure class="card__image">
-              <img src="/images/blog-card1.png" alt="ブログ紹介1">
+              <img src="/images/blog-card3.png" alt="クマノミとイソギンチャク">
             </figure>
             <div class="card__info">
-              <time class="card__date" time datetime="2023-11-17">2023.11/17</time>
-              <h3 class="card__title">ライセンス取得</h3>
-              <p class="card__text">ここにテキストが入ります。
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+              <time class="card__date" time datetime="2023-11-17">2023/11/17</time>
+              <h3 class="card__title">カクレクマノミ</h3>
+              <p class="card__text">
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
                 ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
             </div><!-- card__info -->
           </div><!-- card__inner -->
@@ -397,7 +501,12 @@
     </div><!-- blog__inner -->
 
     <div class="blog__button">
-      <a href="#" class="button">view more</a>
+      <div class="button__box">
+        <a href="#" class="button">
+          <span class="button__text">view more</span>
+          <span class="button__border"></span>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -416,12 +525,14 @@
             </div>
             <h3 class="voice-card__title">ここにタイトルが入ります。ここにタイトル</h3>
           </div>
-          <figure class="voice-card__image">
-            <img src="/images/voice-1.png" alt="お客様の声1">
+          <figure class="voice-card__image colorbox">
+            <img src="/images/voice-1.png" alt="麦わら帽子を被る笑顔の女性">
           </figure>
         </div>
-        <p class="voice-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+        <p class="voice-card__text">
+          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
           ここにテキストが入ります。ここにテキストが入ります。</p>
       </a>
       <a href="#" class="voice-card">
@@ -433,17 +544,26 @@
             </div>
             <h3 class="voice-card__title">ここにタイトルが入ります。ここにタイトル</h3>
           </div>
-          <figure class="voice-card__image">
-            <img src="/images/voice-2.png" alt="お客様の声2">
+          <figure class="voice-card__image colorbox">
+            <img src="/images/voice-2.png" alt="親指をたてるジェスチャーの男性">
           </figure>
         </div>
-        <p class="voice-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+        <p class="voice-card__text">
+          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
           ここにテキストが入ります。ここにテキストが入ります。</p>
       </a>
     </div>
+
     <div class="voice__button">
-      <a href="#" class="button">view more</a>
+      <div class="button__box">
+        <a href="#" class="button">
+          <span class="button__text">view more</span>
+          <span class="button__border"></span>
+        </a>
+      </div>
+
     </div>
   </section>
 
@@ -514,14 +634,19 @@
           <p class="price-course__item-price">¥32,000</p>
         </div>
       </div>
-      <figure class="price__image-pc u-desktop">
+      <figure class="price__image-pc u-desktop colorbox">
         <img src="/images/price-image-pc.png" alt="小魚の魚影">
       </figure>
     </div>
     <div class="price__button">
       <div class="button__shadow">
-      <a href="#" class="button">view more</a>
-    </div>
+        <div class="button__box">
+          <a href="#" class="button">
+            <span class="button__text">view more</span>
+            <span class="button__border"></span>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
   <!-- contact -->
@@ -541,18 +666,25 @@
               <p class="contact__address-detail">定休日:毎週火曜日</p>
             </div>
             <figure class="contact__address-map">
-              <img src="/images/map-dummy.png" alt="店舗地図">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.9269732221546!2d127.68673268676781!3d26.231562267910046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f15!3m3!1m2!1s0x34e56bd080e8471b%3A0x579400726115a4b6!2z44CSOTAwLTAwMDUg5rKW57iE55yM6YKj6KaH5biC5aSp5LmF77yR5LiB55uu!5e0!3m2!1sja!2sjp!4v1688343321454!5m2!1sja!2sjp"
+                width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             </figure>
+            <!-- 拡大 13.1⇒15へ -->
           </div>
         </div>
         <div class="contact__inquiry">
           <div class="contact__section-title">Contact</div>
           <div class="contact__section-subtitle">お問い合わせ</div>
           <p class="contact__inquiry-text">ご予約・お問い合わせはコチラ</p>
-          <a href="#" class="contact__inquiry--button button">Contact us</a>
-        </div>
-        <div class="contact__background-image">
-          <img src="/images/kingyohanadai__contact-PC.png" alt="キンギョハナダイの群れ">
+          <!-- <a href="#" class="contact__inquiry--button button">Contact us</a> -->
+          <div class="button__box">
+            <a href="#" class="contact__inquiry--button button">
+              <span class="button__text">Contact us</span>
+              <span class="button__border"></span>
+            </a>
+          </div>
         </div>
       </div>
     </div><!-- contact__inner -->
@@ -585,8 +717,9 @@
               <li><a href="#">貸切体験ダイビング</a></li>
               <li><a href="#">ナイトダイビング</a></li>
             </ul>
+
             <h3 class="navigation_menu-title navigation__menu-about">
-              <a href="#">私達について</a>
+              <a href="#">私たちについて</a>
             </h3>
           </div> <!-- navigation__menu-coulmn-first -->
           <!-- navigation__menu-coulmn-second -->
@@ -626,21 +759,21 @@
               <a href="">よくある質問</a>
             </h3>
             <h3 class="navigation_menu-title navigation__menu-privacy-policy">
-              <a href="">プライバシー<br>ポリシー</a>
+              <a href="">プライバシー<br class="br-pc">ポリシー</a>
             </h3>
             <h3 class="navigation_menu-title navigation__menu-terms-of-service">
               <a href="">利用規約</a>
             </h3>
             <h3 class="navigation_menu-title navigation__menu-contact">
-              <a href="#">おい問わ合せ</a>
+              <a href="#">お問い合わせ</a>
             </h3>
           </div><!-- navigation__menu--coulmn-fourth -->
         </div><!-- navigation__menu-coulmn-right -->
-      </div><!-- navigation__menu -->
-      <p class="footer__copyright">
-        Copyright &copy; 2021 - 2023 CodeUps LLC. All Rights Reserved.
-      </p>
-    </div><!-- footer__inner -->
+      </div><!-- footer__inner -->
+    </div><!-- navigation__menu -->
+    <p class="footer__copyright">
+      Copyright &copy; 2021 - 2023 CodeUps LLC. All Rights Reserved.
+    </p>
   </section><!-- footer -->
 
   <!-- to-top -->
@@ -648,7 +781,6 @@
   <div class="pagetop">
     <a href="#"><img src="/images/to-top.png" alt="戻るボタン"></a>
   </div>
-
 
   <!--script js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>

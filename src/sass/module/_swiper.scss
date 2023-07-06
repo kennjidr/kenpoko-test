@@ -7,6 +7,18 @@
   width: 8rem;
 }
 
+//ボックスで位置調整ができるか？
+
+.swiper-button-box{
+    align-items: center;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 13.5%;
+    top: -4.8125rem;
+    width: 16.25rem;
+}
 
 /* 前へ次への矢印カスタマイズ */
 .swiper-button-prev::after,
@@ -21,18 +33,23 @@
      margin: auto;
      width: 8rem;
      top: inherit;
-     top: -33vh;
+     top: -650%;
    }
-     }
+   @include mq('lg'){//w1024
+    top: -700%;
+  }
+  
+  }
 /* 前への矢印カスタマイズ */
 .swiper-button-prev::after {
   background-image: url(/images/swiper-icon-left.png);
-  right: -65vw;
-
+  right:-61.4vw;
 }
 /* 次への矢印カスタマイズ */
 .swiper-button-next::after {
   background-image: url(/images/swiper-icon-right.png);
-  right: 6vw;
+  right: 11.9vw;
+
 }
+
 

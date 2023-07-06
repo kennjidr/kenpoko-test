@@ -8,13 +8,15 @@
 } 
 
  .drawer-icon__bars {
-   width: 3.2rem;
-   height: 2.5rem;
+   width: 2.85rem;
+   height: 2.9rem;
    display: block;
    cursor: pointer;
    position: relative;
+   margin-left: 0.5rem;
  }
 
+ 
  .drawer-icon__bar1,
  .drawer-icon__bar2,
  .drawer-icon__bar3 {
@@ -32,19 +34,21 @@
  .drawer-icon__bar3 {top: 2.6rem;}
 
  .header__drawer.is-open .drawer-icon__bar1  {
-   transform: rotate(-45deg);
-   top: 0.8rem;
-   background-color: #fff;
- }
+  transform: translateY(1.2rem) rotate(36deg);
+  width: 4rem;
+  background-color: #fff;
+}
  .header__drawer.is-open .drawer-icon__bar2 {
    opacity: 0;
  }
 
  .header__drawer.is-open .drawer-icon__bar3 {
-   transform: rotate(45deg);
-   top: 0.8rem;
+  transform: translateY(-1.2rem) rotate(-36deg);
+   width: 4rem;
+
    background-color: #fff;
  }
+
 
 .drawer-menu{
 position: absolute;
@@ -64,7 +68,15 @@ background-color:  $accent-color;;
 }
 
 .drawer-menu.is-open{
-  pointer-events: auto;//表示されてクリックできるようになる。
+  pointer-events: auto;//drawwe-menuが表示後にクリックできるようになる。
   opacity: 1;
 }
-
+.drawer-menu__box{
+  margin-top: -1.5rem;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+  width: 34.2rem;
+  justify-content: space-between;
+}

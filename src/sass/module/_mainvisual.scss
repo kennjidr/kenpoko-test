@@ -5,33 +5,37 @@
 .main-visual__text{
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 49.85%;
+  left: 52.5%;
   color: $white;
   font-size: 1.6rem;
   z-index: 2;
   transform: translate(-50%, -50%);
+   @include mq('md'){
+    top: 55.4%;
+    left: 50.5%;
+     }
 }
 
 .main-visual-title {
 font-size: 4rem;
 letter-spacing: 2.16rem;
- font-family: $price-font-family;
-
+font-family: $price-font-family;
  @include mq('md'){
     font-size: 8rem;
     line-height: 10rem;
     letter-spacing: 4.32rem;
+    padding-left: 2.8rem;
    }
 }
-
-
 
 .main-visual-subtitle {
   font-size: 2rem;
   font-family: $second-font-family;
   text-align: center;
+  padding-right:2.15rem ;
    @include mq('md'){
+    padding-right: 1.5rem;
       
      }
 

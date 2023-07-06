@@ -22,7 +22,29 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }, 150, 'swing');
     return false;
   });
+    // フッター手前でストップ
+    $(".pagetop").hide();
+    $(window).on("scroll", function () {
+      scrollHeight = $(document).height();
+      scrollPosition = $(window).height() + $(window).scrollTop();
+      footHeight = $(".footer").innerHeight();
+      if (scrollHeight - scrollPosition <= footHeight) {
+   　　　// ページトップボタンがフッター手前に来たらpositionとfixedからabsoluteに変更
+        $(".pagetop").css({
+          position: "absolute",
+          bottom: footHeight,
+        });
+      } else {
+        $(".pagetop").css({
+          position: "fixed",
+          bottom: "0",
+        });
+      }
+    });
 
+
+
+  
   //ドロワーメニュー
   $("#MenuButton").click(function () {
     // $(".l-drawer-menu").toggleClass("is-show");
@@ -58,15 +80,15 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
-  //inview 
+  //inview
   //要素の取得とスピードの設定
-  var box = $('information-colorobox'),
+  var box = $('.colorbox'),
     speed = 700;
 
   //.colorboxの付いた全ての要素に対して下記の処理を行う
   box.each(function () {
-    $(this).append('<div class="color"></div>')
-    var color = $(this).find($('.color')),
+    $(this).append('<div class="colorbox-image"></div>')
+    var color = $(this).find($('.colorbox-image')),
       image = $(this).find('img');
     var counter = 0;
 
@@ -84,11 +106,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       }
     });
   });
-
-
-
-
 });
+
 
 var mySwiper = new Swiper('.swiper-first-view', {
 
@@ -96,9 +115,9 @@ var mySwiper = new Swiper('.swiper-first-view', {
   loopedSliders: 3,//スライド枚数
   speed: 1500,//切り替わるスピード
   effect: 'fade',//フェイドエフェクトの追加
-  fadeEffect: {         //エフェクトの挙動を追加
-    crossFade: true     //追加 (スライドの重なりを解消)
-  },                    //
+  fadeEffect: {       //エフェクトの挙動を追加
+  crossFade: true     //追加 (スライドの重なりを解消)
+  },                  //
   autoplay: {
     delay: 2000,//自動切り替わり速度
   },
@@ -115,17 +134,12 @@ var mySwiper = new Swiper('.campaign__swiper-container', {
   loop: true,
   width: 280,
   spaceBetween: 20,
-  loopedSliders: 3,
+  loopedSliders: 8,
 
   breakpoints: {
     768: {
       width: 333,
       spaceBetween: 40,
-
     }
   },
 });
-
-
-
-

@@ -1,7 +1,10 @@
 @use "global" as *;
 
 .about {
-margin-top: 8rem;
+margin-top: 8.3rem;
+ @include mq('md'){
+    margin-top: 14.6rem;
+   }
 }
 
 .about-section{
@@ -15,16 +18,72 @@ margin-top: 8rem;
      position: relative; 
      width: $inner;
      max-width: 100%;
-     paddding:0 $padding-pc;
+     padding:0 $padding-pc;
      margin: 0 auto;
+     
   }
 }
+
+.about__inner::before{//サンゴの画像
+ @include mq('md'){
+  content: "";
+  position: absolute;
+  background-image: url(/images/about-pc-figure-coral.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: -20%;
+  right: 0;
+  width: 19.4rem;
+  max-width: 100%;
+  height: 18.1rem;
+  margin: auto;
+  mix-blend-mode: multiply;
+
+  }
+ @include mq('lg'){
+  content: "";
+  position: absolute;
+  background-image: url(/images/about-pc-figure-coral.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: -20%;
+  right: 0;
+  width: 19.4rem;
+  max-width: 100%;
+  height: 18.1rem;
+  margin: auto;
+  mix-blend-mode: multiply;
+
+
+
+   }
+ @include mq('xl'){
+  content: "";
+  position: absolute;
+  background-image: url(/images/about-pc-figure-coral.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: -20%;
+  right: -9%;
+  width: 19.4rem;
+  max-width: 100%;
+  height: 18.1rem;
+  margin: auto;
+  mix-blend-mode: multiply;
+
+
+
+   }
+
+
+}
+
 
 .about__images{
  position: relative;
  max-width: 100%;
  aspect-ratio: 345/213;
- margin-top: 2.3rem; 
+ margin-top: 2.8rem;
 }
 
 .about__image-left {
@@ -34,16 +93,27 @@ margin-top: 8rem;
  aspect-ratio: 128/194;
  max-width: 37.1014492753%;
  width: 100%;
+ @include mq('md'){
+  top: 1.3rem;
+  left: -2.5rem;
+  max-width: 39%;
+  }
 }
 
 .about__image-right {
 position: absolute;
+aspect-ratio: 281 / 186;
 bottom: 0;
 right: 0;
-aspect-ratio: 281 / 186;
 max-width: 81.4492753623%;
 width: 100%;
 z-index: -1;
+
+ @include mq('md'){
+  bottom: -3.8rem;
+  right: -2.31rem;
+  max-width: 85%;
+ }
 }
 
 .about__info {
@@ -51,7 +121,7 @@ margin-top: 4.0rem;
  @include mq('md'){
    display: flex;
    position: absolute;
-   top: 20rem;
+   top: 15.7rem;
    left: 19.9rem;
    }
 }
@@ -68,9 +138,13 @@ margin-top: 4.0rem;
       max-width: 100%;
       margin-right: 4rem;
       line-height: 10rem;
+      margin-top: 1.75rem;
      }
 }
 
+.about__text-group{
+
+}
 .about__text {
   margin-top: 1.6rem;
   color: $base-font-family;
@@ -84,20 +158,6 @@ margin-top: 4.0rem;
 }
 
 .about__button{
-margin-top: 4rem;
+margin-top: 3.9rem;
 text-align: center;
-}
-
-.about__background-image{//微調整が必要
-  display: none;
-  @include mq('md'){
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: 0 ;
-    max-width: 100%;
-    width: 19.4rem;
-    aspect-ratio: 194/181;
-    mix-blend-mode: multiply;
-     }
 }

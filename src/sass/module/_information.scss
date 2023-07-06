@@ -4,6 +4,11 @@
 background-color: $background-color;
 padding: 8rem 0;
 margin-top: 8rem;
+ @include mq('md'){
+    margin-top: 18rem;
+    padding-top: 10.3rem;
+    padding-bottom:10rem;
+   }
 }
 
 .information__inner {
@@ -18,40 +23,24 @@ padding: 0 $padding-sp;//1.5rem
 
 }
 .information__image {
-   margin-top: 2.4rem;
-   
+   margin-top: 3.0rem;
    @include mq('md') {
-     flex: 0 0 50%;
+     flex: 0 0 52%;
      max-width: 100%;
-     margin-right: 4.8rem;
+     margin-right: 5.5rem;
+     margin-left: -2.6rem;
+     padding-right: 0rem;
+     margin-top: 0;
    }
  }
- 
- .information-colorbox {
-   position: relative;
-   width: 80%;
-   margin: 30px auto;
- }
- 
- .information-colorbox .color {
-   position: absolute;
-   top: 0;
-   right: 0;
-   width: 100%;
-   height: 100%;
-   z-index: 2;
-   background-color: #408F95;
- }
- 
-
 
 .information__info {
 margin-top: 2.4rem;
+z-index: 10;
  @include mq('md'){
-
+  margin-top: 6.3rem;
   flex: 0 0 46.66666%;
-}
-
+ }
 }
 
 
@@ -63,6 +52,9 @@ font-weight: $bold;//700
 padding-bottom: 0.4rem;
 border-bottom: 1px solid $accent-color;
 
+ @include mq('md'){
+  font-size: 2.4rem;
+ }
 }
 
 .information__text {
@@ -77,5 +69,3 @@ margin-top: 0.8rem;
 text-align: center;
 margin-top: 4rem;
 }
-
-
