@@ -1,40 +1,43 @@
 @use "global" as *;
+//rem済
 .main-visual{
  position: relative;
 }
 .main-visual__text{
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 49.85%;
+  left: 52.5%;
   color: $white;
-  font-size: 1.6rem;
+  font-size: rem(16);
   z-index: 2;
   transform: translate(-50%, -50%);
+   @include mq('md'){
+    top: 55.4%;
+    left: 50.5%;
+     }
 }
 
 .main-visual-title {
-font-size: 4rem;
-letter-spacing: 2.16rem;
- font-family: $price-font-family;
-
+font-size: rem(40);
+letter-spacing: rem(21.6);
+font-family: $price-font-family;
  @include mq('md'){
-    font-size: 8rem;
-    line-height: 10rem;
-    letter-spacing: 4.32rem;
+    font-size: rem(80);
+    line-height: rem(100);
+    letter-spacing: rem(43.2);
+    padding-left: rem(28);
    }
 }
 
-
-
 .main-visual-subtitle {
-  font-size: 2rem;
+  font-size: rem(20);
   font-family: $second-font-family;
   text-align: center;
+  padding-right:rem(21.5);
    @include mq('md'){
-      
-     }
-
+    padding-right: rem(15);
+   }
 }
 
 

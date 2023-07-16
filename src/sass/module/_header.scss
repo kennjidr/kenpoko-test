@@ -2,41 +2,44 @@
 
 .header {
   position: fixed;
-  height: 8rem;
+  height: rem(80);
   top: 0;
   left: 0;
   right: 0;
   z-index: 9999;
   background-color: #0D2936AD;
-
    @include mq('md'){
-      height: 9rem;
+      height: rem(90);
    }
-}
+  }
 
 .header__inner {
   height: inherit;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.5rem;
+  padding: 0 rem(15);
   transition:  ease .5s;
    @include mq('md'){
     justify-content: normal;
-    padding: 0 4rem;
+    position: relative;
+    padding:0 rem(40);
+  
    }
 }
+
+
 .js-header.is-open{
   background: $accent-color;
 }
 
 
 .header__logo {
-  max-width: 10.2rem;
+  max-width: rem(102);
   width: 100%;
 
   @include mq('md') {
-    max-width: 13.3rem;
+    max-width: rem(133);
     width: 100%;
   }
 }
@@ -47,18 +50,68 @@
     margin-left: auto;//右にメニューリストを寄せる
     display: flex;
     color: $white;
-  }
+    margin-bottom: rem(6);
+    height: inherit;
+   } 
 }
 
+.navigation-item{
+ @include mq('md'){
+  display: inline-block;
+    position: relative;
+    height: inherit;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ }
+
+ .navigation-items a:hover{//.navigation-itemの親要素にa:hoverをつけると、透過無効ができた。
+  @include mq('md'){
+   opacity: 1;
+   }
+  }
+
+
+
+.navigation-item::after{
+ @include mq('md'){
+    left: 0;
+    content: '';
+    width: 100%;
+    height: rem(1);
+    background:$white;
+    bottom: rem(16);
+    transform: scale(0, 1);
+    transform-origin: center top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の右端*/
+    transition: transform 0.3s;   /*変形の時間*/
+    position: absolute;
+    
+   }
+}
+
+.navigation-item:hover::after{
+  @include mq('md'){
+    opacity: 1;
+    transform: scale(1, 1); /*ホバー後、x軸方向に1（相対値）伸長*/
+  }
+ }
+
+// 修正コード
 .navigation-item:not(:last-child){
  @include mq('md'){
-   margin-right: 4rem;
+   margin-right:rem(30);
   }
+ @include mq('lg'){
+  margin-right: rem(40);
+   }
 }
 
 .item-title {
   @include mq('md') {
-    font-size: 1.8rem;
+    font-size: rem(18);
     font-family: $second-font-family;
     font-weight: $normal;
     text-align: center;
@@ -67,31 +120,8 @@
 
 .item-subtitle {
   @include mq('md') {
-    font-size: 1rem;
+    font-size: rem(10);
     font-weight: $normal;
     text-align: center;
-    position: relative;
   }
 }
-
-.navigation-item ::after {
-  @include mq('md'){
-   left: 0;
-   content: '';
-   width: 100%;
-   height: 0.1rem;
-   background:$white;
-   bottom: -1px;
-   transform: scale(0, 1);
-   transform-origin: center top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の右端*/
-   transition: transform 0.3s;   /*変形の時間*/
-   position: absolute;
-  }
- }
-
- .navigation-item :hover::after{
-  @include mq('md'){
-    transform: scale(1, 1); /*ホバー後、x軸方向に1（相対値）伸長*/
-  }
- }
-

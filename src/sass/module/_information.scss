@@ -2,80 +2,78 @@
 
 .information {
 background-color: $background-color;
-padding: 8rem 0;
-margin-top: 8rem;
+padding: rem(80) 0;
+margin-top: rem(80);
+ @include mq('md'){
+    margin-top: rem(140);
+    padding-top: rem(100);
+    padding-bottom:rem(100);
+   }
 }
 
-.information__inner {
-padding: 0 $padding-sp;//1.5rem
+.information__inner {//innerに余白を引き継いだ
+// padding: 0 $padding-sp;//1.5rem
  @include mq('md'){
-  width: $inner;
-  max-width: 100%;
+  // width: $inner;
+  // max-width: 100%;
   display: flex;
-  margin: 4rem auto 0;
-  padding: 0 $padding-pc;//2.0rem
+  // margin: 0 auto;
+  // padding: 0 $padding-pc;//2.0rem
  }
 
 }
+
+.infomation__box{
+ @include mq('md'){
+  margin-top: rem(40);
+   }
+}
+
 .information__image {
-   margin-top: 2.4rem;
-   
+   margin-top: rem(30);
    @include mq('md') {
-     flex: 0 0 50%;
      max-width: 100%;
-     margin-right: 4.8rem;
+     width: rem(540);
+     margin-right: rem(48);
+     padding-right: rem(0);
+     margin-top:rem(0);
    }
  }
- 
- .information-colorbox {
-   position: relative;
-   width: 80%;
-   margin: 30px auto;
- }
- 
- .information-colorbox .color {
-   position: absolute;
-   top: 0;
-   right: 0;
-   width: 100%;
-   height: 100%;
-   z-index: 2;
-   background-color: #408F95;
- }
- 
-
 
 .information__info {
-margin-top: 2.4rem;
+margin-top: rem(24);
+z-index: 10;
  @include mq('md'){
-
-  flex: 0 0 46.66666%;
-}
-
+  margin-top: rem(63);
+  max-width: rem(492);
+  width: 100%;
+ }
 }
 
 
 .information__title {
 display: block;
-font-size: 2rem;
-line-height: 2.4rem;
+font-size: rem(20);
+line-height: rem(24);
 font-weight: $bold;//700
-padding-bottom: 0.4rem;
+padding-bottom: rem(1.76);
 border-bottom: 1px solid $accent-color;
 
+ @include mq('md'){
+   padding-bottom: rem(6.08);
+  font-size: rem(24);
+ }
 }
 
 .information__text {
-font-size: 1.6rem;
+font-size: rem(16);
 color: $font-color;
 font-weight: $normal;
-line-height: 2.4rem;
-margin-top: 0.8rem;
+line-height: rem(24);
+margin-top: rem(8);
 }
 
 .imformation__button {
 text-align: center;
-margin-top: 4rem;
+margin-top: rem(40);
 }
-
-

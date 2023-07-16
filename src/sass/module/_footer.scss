@@ -2,123 +2,165 @@
 
 .footer {
   background-color: $accent-color;
-  margin-top: 10rem;
+  margin-top: rem(100);
+   @include mq('md'){
+    margin-top: rem(160);
+    
+    }
 }
 .footer__inner {
-  padding: 0 $padding-sp; //1.5rem
-  max-width: 100%;
-  width: 50rem;
-  margin: 0 auto;
+  max-width: rem(500);//半端サイズの調整
    @include mq('md'){
-    width: 108rem; 
-   }
+  }
 }
 
 .logo__block{
    @include mq('md'){
      display: flex;
      align-items: flex-end;
+     margin-top: rem(18);
+    //  margin-bottom: rem(-15);
+    //  margin-left:rem(-15);
      }
 }
 .footer__logo {
-  width: 12rem;
+  width: rem(120);
   max-width: 100%;
    @include mq('md'){
-      width: 20rem;
+      width: rem(200);
       max-width: 100%;
+      margin-right:rem(15) ;
      }
 }
 .head__logo {
   display: block;
-  padding-top: 4.8rem;
+  padding-top: rem(48);
   @include mq('md'){
-      margin-right: 4rem;
+      margin-right: rem(40);
+      padding-top: rem(78);
      }
 }
 
 .footer__sns-icon {
   display: flex;
-  margin-top: 1rem;
+  margin-top: rem(17);
    @include mq('md'){
+    margin-top: rem(0);
+    margin-bottom: rem(5);
    }
 }
 
-
 .icon-facebook {
-max-width: 2.4rem;
+max-width: rem(24);
 width: 100%;
-margin-right: 1.5rem;
+margin-right: rem(15);
+ @include mq('md'){
+  max-width: rem(32);
+  width: 100%;
+ }
 }
 
 .icon-instagram {
-max-width: 2.4rem;
+max-width: rem(24);
 width: 100%;
+ @include mq('md'){
+  max-width: rem(32);
+  width: 100%;
+   }
 }
 
-.footer-menu {}
+.footer-menu {
+   @include mq('md'){
+
+     }
+}
 
 .navigation__menu {
-  font-size: 1.6rem;
+  font-size: rem(16);
   color: $white;
-  line-height: 1.8rem;
+  line-height: rem(18);
   font-weight: $normal;
   display: flex;
   justify-content: space-between;//marjin 0 auto;で中央寄せができず、flex:centerは感覚が狭い。
+  margin-right: rem(10);
    @include mq('md'){
-     justify-content: normal ; 
+     justify-content: normal ;
+     margin-right: rem(0);
      }
 
 }
 
 .navigation_menu-title{
-  font-size: 1.6rem;
+  font-size: rem(16);
   font-weight: $bold;
-  line-height: 1.8rem;
-  margin-top: 4rem;
+  line-height: rem(18);
+  margin-top: rem(38);
+   @include mq('md'){
+    margin-top: rem(12);
+  }
 }
 
 .navigation_menu-title::before {
   content: '';
   display: inline-block;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: rem(18);
+  height: rem(18);
   background-image: url(/images/star-fish.png);
   background-size: contain;
   top: 0;
   left: 0;
-  transform: translateY(0.1rem);
+  transform: translateY(rem(1));
 }
+.br-pc{
+   @include mq('md'){
+      display: none;
+     }
 
+}
 
 .navigation__menu-campaign li{
-  text-indent: 2.2rem;
-  margin-top: 2.4rem;
+  margin-top: rem(24);
+  text-indent: 0em;
+  padding-left: 1.2em;
 }
+
 
 
 .navigation_menu-title li{
-  text-indent: 2.2rem;
-  margin-top: 2.4rem;
+  text-indent: rem(22);
+  margin-top: rem(24);
 }
-.navigation__menu-price li{
-  text-indent: 2.2rem;
-  margin-top: 2.4rem;
+.navigation__menu-price-list li{
+  margin-top: rem(24);
+  text-indent: 0em;
+  padding-left: 1.2em;
 }
 
-.navigation__menu-about {}
+.navigation__menu-about {
+   @include mq('md'){
+     margin-top: rem(40);
+     }
+}
 
 
 .navigation__menu-infomation li{
-  text-indent: 2.2rem;
-  margin-top: 2.4rem;
+  margin-top: rem(24);
+  text-indent: 0em;
+  padding-left: 1.2em;
 }
 
 .navigation__menu-blog {
+  @include mq('md'){
+    margin-top: rem(40);
+    }
+
 
 }
 .navigation__menu-coulmn-left{
+
    @include mq('md'){
       display: flex;
+
     }
 }
 .navigation__menu-coulmn-right {
@@ -127,43 +169,77 @@ width: 100%;
      }
 }
 
+
 .navigation__menu-coulmn-first{
    @include mq('md'){
-      margin-right: 11rem;
-     }
+    width: rem(210);
+    margin-right: rem(78);
+    margin-top: rem(12);
+
+}
 }
 .navigation__menu-coulmn-second {
   @include mq('md'){
-    margin-right: 11rem;
+    width: rem(210);
+    margin-right: rem(60);
+    margin-top: rem(12);
    }
 
 }
 .navigation__menu-coulmn-third {
   @include mq('md'){
-    margin-right: 11rem;
-   }
+    width: rem(210);
+    margin-right:rem(60);
+    margin-top: rem(12);
+  }
 
 }
 .navigation__menu-coulmn-fourth {
   @include mq('md'){
-    margin-right: 11rem;
-   }
-
+    width: rem(194);
+    margin-top: rem(12);
+  }
 }
 .navigation__menu-privacy-policy{
   padding-left: 1.5em;
   text-indent: -1.5em;
- 
+   @include mq('md'){
+    margin-top: rem(38.4);
+     }
 }
-.navigation__menu-voice {}
+.navigation__menu-voice {
+}
 
-.navigation__menu-price {}
+.navigation__menu-price {
+  @include mq('md'){
+    margin-top: rem(38.4);
+    }
+}
+
+.navigation__menu-terms-of-service{
+  @include mq('md'){
+    margin-top: rem(38.4);
+    }
+}
+.navigation__menu-contact{
+  @include mq('md'){
+    margin-top: rem(38.4);
+    }
+}
+
 
 .footer__copyright {
- font-size: 1.2rem;
+ font-size: rem(12);
  color: $white;
- line-height: 1.8rem;
+ line-height: rem(18);
  text-align: center;
- margin-top: 4rem;
- padding-bottom: 5.6rem;
+ margin-top: rem(40);
+ padding: 0 rem(14);
+ padding-bottom: rem(56);
+ letter-spacing: rem(0.37);
+ @include mq('md'){
+    font-size: rem(14);
+    margin-top: rem(76.8);
+    padding-bottom: rem(80)
+   };
 }

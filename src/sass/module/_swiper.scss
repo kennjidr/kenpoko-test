@@ -1,38 +1,47 @@
 @use "global" as *;
 
 /* 前へ次への矢印カスタマイズ */
-.swiper-button-prev,
-.swiper-button-next {
-  height: 8rem;
-  width: 8rem;
+.campaign-swiper__button .swiper-button-prev,
+.campaign-swiper__button .swiper-button-next {
+  height: rem(80);
+  width: rem(80);
+  background-image: none;
 }
 
+//ボックスで位置調整ができるか？
+
+.swiper__button-box{
+  position: absolute;
+  right: 18.5%;
+    top: -17.8%;
+}
 
 /* 前へ次への矢印カスタマイズ */
 .swiper-button-prev::after,
 .swiper-button-next::after {
+  display: none;
    @include mq('md'){
-      
+     display: block;
      background-repeat: no-repeat;
      background-size: contain;
-     content: "";
+     content: ""; //デフォルトアイコンを非表示
      position: absolute;
-     height: 8rem;
+     height: rem(80);
      margin: auto;
-     width: 8rem;
-     top: inherit;
-     top: -33vh;
+     width: rem(80);
+     top: 0;
    }
-     }
+  }
+
 /* 前への矢印カスタマイズ */
 .swiper-button-prev::after {
   background-image: url(/images/swiper-icon-left.png);
-  right: -65vw;
-
+  right:0;
 }
 /* 次への矢印カスタマイズ */
 .swiper-button-next::after {
   background-image: url(/images/swiper-icon-right.png);
-  right: 6vw;
+  right: rem(-210);
+
 }
 

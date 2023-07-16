@@ -16,9 +16,9 @@ $padding-sp: 15px;//カンプ15pxが多く、デフォルトの20pxから変更
 ////////////////////
 // フォント設定
 ////////////////////
-$base-font-family: 'Noto Sans JP';
-$second-font-family: 'Gotu';
-$price-font-family: 'Lato';
+$base-font-family: 'Noto Sans JP','sans-serif','serif';
+$second-font-family: 'Gotu','sans-serif','serif';
+$price-font-family: 'Lato','sans-serif','serif';
 
 // ※検証ツールでしっかり反映されているか確認する
 
@@ -75,7 +75,7 @@ $mediaquerys: (
 
 // remへの計算式（16pxを基準としている。10pxを基準とする場合は16を10に変更する）
 @function rem($pixels) {
-  @return math.div($pixels, 10) * 1rem;//16pxから10pxに変更
+  @return math.div($pixels, 16) * 1rem;//10pxから16pxに修正
 }
 
 
@@ -91,7 +91,6 @@ $mediaquerys: (
     display: block;
   }
 }
-
 //モバイルのみ表示
 .u-mobile {
   @include mq("md") {

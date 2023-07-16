@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .inner {
-  width: 100%;
+  width: 100%;// max-widthでサイズ指定ができる。
   padding-right: $padding-sp;
   padding-left: $padding-sp;
   margin-right: auto;

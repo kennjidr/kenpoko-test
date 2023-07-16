@@ -1,106 +1,121 @@
 @use "global" as *;
 
 .campaign {
-  margin-top: 4rem;
+  margin-top: rem(40);
 
   @include mq('md') {
-    margin-top: 12rem;
+    margin-top: rem(120);
   }
 }
 
-.campaign__inner {
-  padding-left: 1.6rem;
-  margin-top: 2.4rem;
-   @include mq('md'){
-    margin: 4rem 0 0 auto;
-    max-width: calc(60vw + 40rem);
-    width: 100%;
-    padding-left: $padding-pc 0 0 0 ;
+.campaign__inner .inner{
+  width: 100%;// max-widthでサイズ指定ができる。
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  margin-right: auto;
+  margin-left: auto;
+    @include mq('md'){
     position: relative;
-     }
+   }
 }
 
 .campaign__cards {
-  margin-top: 2.4rem;
+  margin-top: rem(24);
+ @include mq('md'){
+  margin-top: rem(40);
+  position: relative;
+  }
 }
 
-.swiper-container {
-  @include mq('md') {}
+.swiper.campaign__swiper-container {
+  @include mq('md') {
+  margin-right:calc(51% - 50vw) ;
+  }
 }
 
-.swiper-slide {}
+.campaign__swiper-container .swiper-slide {
+  height: auto;
+  
+}
 
 .card__boxshadow{
   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
-  margin: 0.3rem;
+  margin: rem(3);
 
    }
 
 .campaign__card {
   display: block;
   background-color: $white;
-  
+  height: 100%;
+
 }
 
-.campaign__card-img {
+.campaign__card-img img{
+  aspect-ratio: 280/188;
+   @include mq('md'){
+    aspect-ratio: 333/223;
+     }
 }
+
 .campaign__card__inner{
-padding: 0  1.6rem;
+padding: 0  rem(14);
 
 }
 .campaign__info {
-  margin-top: 1.6rem;
+  margin-top: rem(21);
    @include mq('md'){
-      margin-top: 2.4rem;
+      margin-top: rem(25.6);
      }
 }
 
 .campaign__category {
   display:inline-block;
   color: $accent-color;
-  font-size: 1.2rem;
-  line-height: 2.2rem;
-  padding: 0.4rem 1.2rem;
+  font-size: rem(12);
+  line-height: rem(22);
+  padding: rem(4) rem(12);
   border: 1px solid $accent-color;
  @include mq('md'){
-   padding: 0.6rem 1.6rem; 
+   padding: rem(5) rem(15); 
    }
-
 }
-
-$base-font-family: 'Noto Sans JP';
-$second-font-family: 'Gotu';
-$price-font-family: 'Lato';
-
 
 .campaign__title {
   color: $font-color;
-  font-size: 1.6rem;
+  font-size: rem(16);
   font-weight: 500;
-  line-height: 2.4rem;
-  margin-top: 0.4rem;   
-
+  line-height: rem(24);
+  margin-top: rem(4);
+  white-space: nowrap;//折返し無しで1行
+  overflow: hidden;//要素からはみ出たテキストを隠す
+  text-overflow: ellipsis;//はみ出たテキスト以降「…」をつける
+  //display: -webkit-box;
+  //-webkit-box-orient: vertical;
+  //-webkit-line-clamp: 2; //2行目以降で
 }
 
 .campaign__price-info {
   text-align: center;
-  padding-bottom: 2.4rem;
+  padding-bottom: rem(24);
  @include mq('md'){
-    padding-bottom: 4rem;
+    padding-bottom: rem(40);
    }
 }
 
 .campaign__price-detail {
 color:$font-color;
-font-size: 1.4rem,;
-line-height: 2.4rem;
+font-size: rem(14);
+line-height: rem(24);
 border-top: 1px solid $accent-color;
-padding-top: 0.8rem;
-margin-top: 0.8rem; 
-margin-bottom: 0.8rem;
+padding-top: rem(8);
+margin-top: rem(8); 
+margin-bottom: rem(8);
 
  @include mq('md'){
-    padding-top: 1.6rem;
+  font-size:rem(16);
+    padding-top: rem(16);
+    padding-right: rem(13);
    }
 }
 
@@ -109,66 +124,46 @@ margin-bottom: 0.8rem;
 font-family: $price-font-family;
 display: flex;
 justify-content: center;
-align-items:flex-end
+align-items:flex-end;
+ @include mq('md'){
+  padding-top: rem(5);
+  }
 }
 
 .campaign__original-price {//bottomまで2.6rem
-  font-size: 2rem;
+  font-size: rem(20);
   font-weight: $bold;
-  line-height: 2rem;  
-  margin-right: 1.6rem;
+  line-height: rem(20);  
+  margin-right: rem(16);
   text-decoration-line: line-through;
   text-decoration-style:solid;
   text-decoration-color: red;
   vertical-align: bottom;
-  margin-bottom: 0.4rem;
+  margin-right: rem(1);
    @include mq('md'){
-    font-size: 2.4rem;
-     margin-right: 2.5rem;
-     }
-     }
-
+    font-size: rem(24);
+    margin-right:rem(25);
+    line-height: rem(24);
+  }
+}
 
 .campaign__discount-price {//bottomまで2.4rem
-  color: #408F95;
-  font-size: 3.2rem;
+  color: $accent-color;
+  font-size: rem(32);
   font-weight: $bold;
-  line-height: 3.2rem;
+  line-height: rem(32);
   vertical-align: bottom;
+  padding-left: rem(6);
  @include mq('md'){
-    font-size: 4rem;
+    font-size: rem(40);
 
-   }
-
+  }
 }
 
-.campaign-swiper-button__box{
-  display: none;
+.campaign__button{
+  text-align: center;
+  margin-top: rem(34);
    @include mq('md'){
-      display: block;
+      margin-top: rem(78);
      }
 }
-
-.swiper-button-prev,
-.swiper-button-next{
-  width: 8rem;
-  height: 8rem;
-}
-
-.swiper-button-prev::after{
-background-repeat: no-repeat;
-background-size: contain;
-content: "swiper-icon-left.png";
-height: 50px;
-margin: auto;
-width: 50px;
-}
-
-.swiper-button-prev::after {
-background-image: url(/images/swiper-icon-left.png);
-}
-.swiper-button-next::after {
-background-image: url(/images/swiper-icon-right.png);
-
-}
-

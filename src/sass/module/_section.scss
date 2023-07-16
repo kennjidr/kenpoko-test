@@ -5,13 +5,13 @@
 }
 
 .section-title {
-  font-size: 3.2rem;
+  font-size: rem(32);
   font-weight: $normal;
   font-family: $second-font-family;
-  line-height: 4rem;
+  line-height: rem(40);
 
   @include mq('md') {
-    font-size: 4rem;
+    font-size: rem(40);
   }
 
   &::first-letter {
@@ -21,17 +21,17 @@
 
 .section-title__whtie {
   color: $font-color;
-  font-size: 3.2rem;
+  font-size: rem(32);
   font-weight: $normal;
   font-family: $second-font-family;
-  line-height: 4rem;
+  line-height: rem(40);
 
   &::first-letter {
     color: $accent-color;
   }
 
   @include mq('md') {
-    font-size: 4rem;
+    font-size: rem(40);
     color: $white;
     &::first-letter {
       color: $white;
@@ -39,28 +39,25 @@
   }
 }
 
-
 .section-subtitle {
-  font-size: 1.2rem;
+  font-size: rem(12);
   color: $accent-color;
   font-weight: $normal;
-  line-height: 1.8rem;
-  margin-top: 0.4rem;
+  line-height: rem(18);
+  margin-top: rem(4);
+   @include mq('md'){
+      margin-top:rem(6.4) ;
+     }
 }
 
 .section-subtitle__white {
-  font-size: 1.2rem;
+  font-size: rem(12);
   color: $accent-color;
   font-weight: $normal;
-  line-height: 1.8rem;
-  margin-top: 0.4rem;
-
+  line-height: rem(18);
+  margin-top: rem(4);
   @include mq('md') {
     color: $white;
-    
-
+    margin-top: rem(10.4);
   }
-
-
-
 }

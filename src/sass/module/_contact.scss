@@ -1,20 +1,17 @@
 @use "global" as *;
 
 .contact {
-  margin-top: 8rem;
-
+  margin-top: rem(80);
   @include mq('md') {
-    margin-top: 14rem;
-    
+    margin-top: rem(145);
   }
 }
 
-
 .contact__inner {
-  padding: 0 3rem;
+  padding: 0 rem(30);
 
   @include mq('md') {
-    width: $inner;
+    width: rem(1132);
     max-width: 100%;
     padding: 0 $padding-pc;
     margin: 0 auto;
@@ -23,85 +20,190 @@
 }
 
 .contact__block {
+  position: relative;
+   @include mq('md') {
+    display: flex;
+    box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
+    // padding: 8.2rem() 10rem() 7.15rem() 4rem(); 20223-07-08 10:21
+    padding: rem(80) 0;
+    width: 100%;
+    max-width: rem(1080);
+    }
+}
+
+
+.contact__block::before {
+  content: "";
+  position: absolute;
+  background: url(/images/contact-sp-hanadai.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -3.5%;
+  right: -5.5%;
+  max-width: 100%;
+  width: rem(109);
+  height: rem(50);
+  margin: auto;
+
+ @include mq('sm'){
+  content: "";
+  position: absolute;
+  background: url(/images/contact-sp-hanadai.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -3.5%;
+  right: -1%;
+  max-width: 100%;
+  width: rem(109);
+  height: rem(50);
+  margin: auto;  
+   }  
 
   @include mq('md') {
-    display: flex;
-    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
-    padding: 6.5rem 8rem 10.15rem 8rem;
-    
+    content: "";
+    position: absolute;
+    background: url(/images/contact-pc-hanadai.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -10%;
+    right: 0%;
+    width: rem(225);
+    height: rem(138);
+    margin: auto;
   }
-
+  @include mq('lg') {
+    content: "";
+    position: absolute;
+    background: url(/images/contact-pc-hanadai.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -10%;
+    right: -0%;
+    width: rem(240);
+    height: rem(138);
+    margin: auto;
+  }
+  @include mq('xl') {
+    content: "";
+    position: absolute;
+    background: url(/images/contact-pc-hanadai.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -10%;
+    right: -12%;
+    width: rem(301);
+    height: rem(138);
+    margin: auto;
+  }
 }
 
 .contact__logo-group {
+  padding: 0  rem(10);
   @include mq('md') {
-    margin-right: 8.2rem;
-    border-right: 1px solid $accent-color;
-  }
+    width: rem(534);
+    max-width: 100%;
+    padding-right: rem(82);
+    margin-left: rem(40);
+    border-right: 1px solid #408F95;
+    margin-right: rem(15);
+ }
 }
 
-
 .contact__logo {
-  width: 17.4rem;
+  width: rem(174);
   max-width: 100%;
   text-align: center;
   margin: 0 auto;
+
+   @include mq('md'){
+    width: rem(204);
+    max-width: 100%;
+    text-align: center;
+
+     }
 }
 
 .contact__address-group {
   text-align: center;
   border-top: 1px solid $accent-color;
+  margin-top: rem(8.5);
 
   @include mq('md') {
     display: flex;
-    margin-right: 4rem;
-
+    // margin-right: 6rem();
+    // margin-top: 0.27rem();
+    text-align: left;
+    margin-top: rem(4);
+    padding-top: rem(9);
   }
 }
 
 .contact__address-info {
-  margin-top: 1.6rem;
+  margin-top: rem(16);
 
   @include mq('md') {
-    margin-right: 2.1rem;
+    margin-right: rem(21);
+    width: rem(168);
+    text-align: left;
   }
 }
 
 .contact__address-detail {
-  font-size: 1.6rem;
+  font-size: rem(16);
   font-weight: $normal;
-  line-height: 2.4rem;
-  margin-top: 0.4rem;
+  line-height: rem(24);
+  margin-top: rem(4);
 
-  &:first-child {
-    margin-top: 0;
-  }
+}
+
+.contact__address-detail:first-child {
+  margin-top: 0;
 }
 
 .contact__address-map {
-  margin-top: 1.6rem;
+  position: relative;
+  aspect-ratio:295/160 ;
+  margin-top: rem(16);
+  width: 100%;//375カンプ幅に合わせるため。
 
   @include mq('md') {
-    width: 27.3rem;
-    max-width: 100%;
-
+    position: relative;
+    aspect-ratio:273/148 ;
+    // margin-top: 1.6rem();
+    max-width: rem(273);
+    width: 100%;
   }
 }
 
+.contact__address-map iframe{
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+} 
+
+
 .contact__inquiry {
-  margin-top: 4rem;
+  margin-top: rem(40);
   text-align: center;
 
   @include mq('md') {
-    margin-top: 2rem;
+    // margin-top:1.5rem();
+    // width: 100%;
+    text-align: center;
+    margin-top: rem(20);
+    margin-left: rem(65);
   }
 }
 
+
+
 .contact__section-title {
-  font-size: 8rem;
+  font-size: rem(80);
   font-weight: $normal;
   font-family: $second-font-family;
-  line-height: 8rem;
+  line-height: rem(80);
 
   &::first-letter {
     color: $accent-color;
@@ -109,34 +211,30 @@
 }
 
 .contact__section-subtitle {
-  font-size: 1.2rem;
+  font-size: rem(12);
   color: $accent-color;
   font-weight: $normal;
-  line-height: 1.8rem;
-  margin-top: -0.4rem;
+  line-height: rem(18);
+  margin-top: rem(-7);//contact__section-titleに対して、カンプ上 上辺食い込み
+   @include mq('md'){
+    margin-top: rem(-10);//contact__section-titleに対して、カンプ上 上辺食い込み
+  };
 }
 
 .contact__inquiry-text {
-  font-size: 1.4rem;
+  font-size: rem(14);
   font-weight: $normal;
   color: $accent-color;
-  margin-top: 0.8rem;
+  margin-top: rem(8);
+  text-align: center;
+   @include mq('md'){
+      margin-top: rem(9.6);
+     }
 }
 
 .contact__inquiry--button {
-  margin-top: 4rem;
+  margin-top: rem(36);
+   @include mq('md'){
+      margin-top: rem(36);
+     };
 }
-.contact__background-image{//微調整が必要
-      display: none;
-    @include mq('md'){
-      display: block;
-      position: absolute;
-      top: -4rem;
-      right: -10rem ;
-      max-width: 100%;
-      width: 30.1rem;
-      max-width: 100%;
-      aspect-ratio: 301/138;
-      mix-blend-mode: multiply;
-       }
-  }
