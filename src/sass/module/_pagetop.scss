@@ -9,7 +9,6 @@ body{
   position: fixed;
   bottom:  rem(16);
   right: 0;
-<<<<<<< HEAD
   margin-right: rem(16);
   margin-bottom:rem(16);
   z-index: 10;
@@ -17,14 +16,5 @@ body{
      width: rem(80);
      margin-bottom:rem(20);
      margin-right: rem(20); 
-=======
-  margin-right: 1.6rem;
-  margin-bottom: 1.6rem;
-  z-index: 10;
-   @include mq('md'){
-     width: 8rem;
-     margin-bottom: 2rem;
-     margin-right: 2rem; 
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
      }
 }

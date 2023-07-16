@@ -8,7 +8,6 @@
   }
 }
 
-<<<<<<< HEAD
 .campaign__inner .inner{
   width: 100%;// max-widthでサイズ指定ができる。
   padding-right: $padding-sp;
@@ -16,31 +15,16 @@
   margin-right: auto;
   margin-left: auto;
     @include mq('md'){
-=======
-.campaign__inner {
-  padding-left: 1.3rem;
-  margin-top: 2.4rem;
-   @include mq('md'){
-    margin: 4rem 0 0 auto;
-    max-width: calc(60vw + 41rem);
-    width: 100%;
-    padding-left: $padding-pc 0 0 0 ;
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
     position: relative;
    }
 }
 
 .campaign__cards {
-<<<<<<< HEAD
   margin-top: rem(24);
  @include mq('md'){
   margin-top: rem(40);
   position: relative;
   }
-=======
-  margin-top: 2.3rem;
-  position: relative;
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
 }
 
 .swiper.campaign__swiper-container {
@@ -75,7 +59,6 @@
 }
 
 .campaign__card__inner{
-<<<<<<< HEAD
 padding: 0  rem(14);
 
 }
@@ -83,15 +66,6 @@ padding: 0  rem(14);
   margin-top: rem(21);
    @include mq('md'){
       margin-top: rem(25.6);
-=======
-padding: 0  1.4rem;
-
-}
-.campaign__info {
-  margin-top: 2.1rem;
-   @include mq('md'){
-      margin-top: 2.9rem;
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
      }
 }
 
@@ -103,11 +77,7 @@ padding: 0  1.4rem;
   padding: rem(4) rem(12);
   border: 1px solid $accent-color;
  @include mq('md'){
-<<<<<<< HEAD
    padding: rem(5) rem(15); 
-=======
-   padding: 0.5rem 1.5rem; 
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
    }
 }
 
@@ -143,15 +113,9 @@ margin-top: rem(8);
 margin-bottom: rem(8);
 
  @include mq('md'){
-<<<<<<< HEAD
   font-size:rem(16);
     padding-top: rem(16);
     padding-right: rem(13);
-=======
-  font-size: 1.6rem;
-    padding-top: 1.6rem;
-    padding-right: 1.3rem;
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
    }
 }
 
@@ -162,11 +126,7 @@ display: flex;
 justify-content: center;
 align-items:flex-end;
  @include mq('md'){
-<<<<<<< HEAD
   padding-top: rem(5);
-=======
-  padding-top: 0.5rem;
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
   }
 }
 
@@ -179,42 +139,24 @@ align-items:flex-end;
   text-decoration-style:solid;
   text-decoration-color: red;
   vertical-align: bottom;
-<<<<<<< HEAD
   margin-right: rem(1);
    @include mq('md'){
     font-size: rem(24);
     margin-right:rem(25);
     line-height: rem(24);
-=======
-  margin-right: 0.1rem;
-   @include mq('md'){
-    font-size: 2.4rem;
-    margin-right: 2.5rem;
-    line-height: 2.4rem;
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
   }
 }
 
 .campaign__discount-price {//bottomまで2.4rem
   color: $accent-color;
-<<<<<<< HEAD
   font-size: rem(32);
-=======
-  font-size: 3.2rem;
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
   font-weight: $bold;
   line-height: rem(32);
   vertical-align: bottom;
-<<<<<<< HEAD
   padding-left: rem(6);
  @include mq('md'){
     font-size: rem(40);
 
-=======
-  padding-left: 0.6rem;
- @include mq('md'){
-    font-size: 4rem;
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
   }
 }
 
@@ -224,39 +166,4 @@ align-items:flex-end;
    @include mq('md'){
       margin-top: rem(78);
      }
-<<<<<<< HEAD
 }
-=======
-}
-
-.swiper-button-prev,
-.swiper-button-next{
-  width: 8rem;
-  height: 8rem;
-}
-
-.swiper-button-prev::after{
-background-repeat: no-repeat;
-background-size: contain;
-content: "swiper-icon-left.png";
-height: 50px;
-margin: auto;
-width: 50px;
-}
-
-.swiper-button-prev::after {
-background-image: url(/images/swiper-icon-left.png);
-}
-.swiper-button-next::after {
-background-image: url(/images/swiper-icon-right.png);
-
-}
-
-.campaign__button{
-  text-align: center;
-  margin-top: 3.4rem;
-   @include mq('md'){
-      margin-top: 7.8rem;
-     }
-}
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821

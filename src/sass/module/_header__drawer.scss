@@ -8,7 +8,6 @@
 } 
 
  .drawer-icon__bars {
-<<<<<<< HEAD
    width: rem(28.5);
    height: rem(29);
    display: block;
@@ -18,17 +17,6 @@
  }
 
 // ハンバーガーアイコン
-=======
-   width: 2.85rem;
-   height: 2.9rem;
-   display: block;
-   cursor: pointer;
-   position: relative;
-   margin-left: 0.5rem;
- }
-
- 
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
  .drawer-icon__bar1,
  .drawer-icon__bar2,
  .drawer-icon__bar3 {//アイコン全体の大きさ
@@ -45,7 +33,6 @@
  .drawer-icon__bar2 {top: rem(14);}
  .drawer-icon__bar3 {top: rem(26);}
 
-<<<<<<< HEAD
  .header__drawer.is-open .drawer-icon__bar1  {//一番上のアイコン、is-open付与時に回転
   transform: translateY(rem(12)) rotate(36deg);
   width: rem(40);
@@ -58,21 +45,6 @@
  .header__drawer.is-open .drawer-icon__bar3 {//一番下のアイコン、is-open付与時に回転
   transform: translateY(rem(-12)) rotate(-36deg);
    width: rem(40);
-=======
- .header__drawer.is-open .drawer-icon__bar1  {
-  transform: translateY(1.2rem) rotate(36deg);
-  width: 4rem;
-  background-color: #fff;
-}
- .header__drawer.is-open .drawer-icon__bar2 {
-   opacity: 0;
- }
-
- .header__drawer.is-open .drawer-icon__bar3 {
-  transform: translateY(-1.2rem) rotate(-36deg);
-   width: 4rem;
-
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
    background-color: #fff;
  }
 
@@ -95,11 +67,7 @@ background-color:  $accent-color;;
 }
 
 .drawer-menu.is-open{
-<<<<<<< HEAD
   pointer-events: auto;//drawer-menuが表示後にクリックできるようになる。
-=======
-  pointer-events: auto;//drawwe-menuが表示後にクリックできるようになる。
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
   opacity: 1;
   overflow: auto;//見切れた際にスクロール
 }
@@ -107,19 +75,13 @@ background-color:  $accent-color;;
 body.is-open{
   overflow: hidden;//スクロールしない。
 }
-<<<<<<< HEAD
 
 .drawer-menu__box{
   margin-top: rem(-15);
-=======
-.drawer-menu__box{
-  margin-top: -1.5rem;
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
   display: flex;
   margin-right: auto;
   margin-left: auto;
   max-width: 100%;
-<<<<<<< HEAD
   width: rem(342);
   // justify-content: space-between;
 
@@ -136,8 +98,4 @@ body.is-open{
 .drawer-menu__box .navigation__menu-price li{
   text-indent: 0em;
   padding-left: 1.2em;
-=======
-  width: 34.2rem;
-  justify-content: space-between;
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
 }

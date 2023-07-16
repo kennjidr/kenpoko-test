@@ -3,12 +3,7 @@
 .contact {
   margin-top: rem(80);
   @include mq('md') {
-<<<<<<< HEAD
     margin-top: rem(145);
-=======
-    margin-top: 14.5rem;
-
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
   }
 }
 
@@ -16,11 +11,7 @@
   padding: 0 rem(30);
 
   @include mq('md') {
-<<<<<<< HEAD
     width: rem(1132);
-=======
-    width: 113.2rem;
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
     max-width: 100%;
     padding: 0 $padding-pc;
     margin: 0 auto;
@@ -30,7 +21,6 @@
 
 .contact__block {
   position: relative;
-<<<<<<< HEAD
    @include mq('md') {
     display: flex;
     box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
@@ -105,65 +95,6 @@
     height: rem(138);
     margin: auto;
   }
-=======
-  @include mq('md') {
-    display: flex;
-    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
-    padding: 8.2rem 10rem 7.15rem 4rem;
-  }
-}
-
-.contact__block::before {
-
-  content: "";
-  position: absolute;
-  background: url(/images/contact-sp-hanadai.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  top: -3.5%;
-  right: -5.5%;
-  max-width: 100%;
-  width: 10.9rem;
-  height: 5rem;
-  margin: auto;
-
-  @include mq('md') {
-    content: "";
-    position: absolute;
-    background: url(/images/contact-pc-hanadai.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    top: -10%;
-    right: 0%;
-    width: 22.5rem;
-    height: 13.8rem;
-    margin: auto;
-  }
-  @include mq('lg') {
-    content: "";
-    position: absolute;
-    background: url(/images/contact-pc-hanadai.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    top: -10%;
-    right: -0%;
-    width: 24rem;
-    height: 13.8rem;
-    margin: auto;
-  }
-  @include mq('xl') {
-    content: "";
-    position: absolute;
-    background: url(/images/contact-pc-hanadai.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    top: -10%;
-    right: -12%;
-    width: 30.1rem;
-    height: 13.8rem;
-    margin: auto;
-  }
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
 }
 
 .contact__logo-group {
@@ -185,24 +116,16 @@
   margin: 0 auto;
 
    @include mq('md'){
-<<<<<<< HEAD
     width: rem(204);
     max-width: 100%;
     text-align: center;
 
-=======
-    width: 20.4rem;
-    max-width: 100%;
-    text-align: center;
-    margin-left: 13.2rem;
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
      }
 }
 
 .contact__address-group {
   text-align: center;
   border-top: 1px solid $accent-color;
-<<<<<<< HEAD
   margin-top: rem(8.5);
 
   @include mq('md') {
@@ -212,16 +135,6 @@
     text-align: left;
     margin-top: rem(4);
     padding-top: rem(9);
-=======
-  margin-top: 0.85rem;
-
-  @include mq('md') {
-    display: flex;
-    margin-right: 6rem;
-    margin-top: 0.27rem;
-    text-align: left;
-    padding-left: 1rem;
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
   }
 }
 
@@ -241,14 +154,10 @@
   line-height: rem(24);
   margin-top: rem(4);
 
-<<<<<<< HEAD
 }
 
 .contact__address-detail:first-child {
   margin-top: 0;
-=======
-
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
 }
 
 .contact__address-detail:first-child {
@@ -265,7 +174,6 @@
 
 .contact__address-map {
   position: relative;
-<<<<<<< HEAD
   aspect-ratio:295/160 ;
   margin-top: rem(16);
   width: 100%;//375カンプ幅に合わせるため。
@@ -276,21 +184,6 @@
     // margin-top: 1.6rem();
     max-width: rem(273);
     width: 100%;
-=======
-  aspect-ratio: 16/9;
-  margin-top: 1.6rem;
-  width: 95%;//375カンプ幅に合わせるため。
-  min-width: 29.5rem;
-  height: 100%;
-  min-height: 16rem;
-  padding-top: 16rem;
-  margin-left: auto;
-  margin-right: auto;//左右両端揃え
-
-  @include mq('md') {
-    width: 27.3rem;
-    max-width: 100%;
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
   }
 }
 
@@ -304,7 +197,6 @@ width: 100%;
 
 
 .contact__inquiry {
-<<<<<<< HEAD
   margin-top: rem(40);
   text-align: center;
 
@@ -314,14 +206,6 @@ width: 100%;
     text-align: center;
     margin-top: rem(20);
     margin-left: rem(65);
-=======
-  margin-top: 3.3rem;
-  text-align: center;
-
-  @include mq('md') {
-    margin-top:1.5rem;
-
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
   }
 }
 
@@ -342,17 +226,10 @@ width: 100%;
   font-size: rem(12);
   color: $accent-color;
   font-weight: $normal;
-<<<<<<< HEAD
   line-height: rem(18);
   margin-top: rem(-7);//contact__section-titleに対して、カンプ上 上辺食い込み
    @include mq('md'){
     margin-top: rem(-10);//contact__section-titleに対して、カンプ上 上辺食い込み
-=======
-  line-height: 1.8rem;
-  margin-top: -0.7rem;//contact__section-titleに対して、カンプ上 上辺食い込み
-   @include mq('md'){
-    margin-top: -1rem;//contact__section-titleに対して、カンプ上 上辺食い込み
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
   };
 }
 
@@ -368,33 +245,8 @@ width: 100%;
 }
 
 .contact__inquiry--button {
-<<<<<<< HEAD
   margin-top: rem(36);
    @include mq('md'){
       margin-top: rem(36);
      };
 }
-=======
-  margin-top: 3.6rem;
-   @include mq('md'){
-      margin-top: 3.6rem;
-     };
-}
-
-.contact__background-image {
-  //微調整が必要
-  display: none;
-
-  @include mq('md') {
-    display: block;
-    position: absolute;
-    top: -4rem;
-    right: -10rem;
-    max-width: 100%;
-    width: 30.1rem;
-    max-width: 100%;
-    aspect-ratio: 301/138;
-    mix-blend-mode: multiply;
-  }
-}
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821

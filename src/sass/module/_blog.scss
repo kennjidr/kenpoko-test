@@ -14,11 +14,7 @@
   content: "";
   background-image: url(/images/blog-backgruond.png);
   width: 100%;
-<<<<<<< HEAD
   height: rem(500);
-=======
-  height: 50rem;
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,17 +25,12 @@
 .blog-section{
   padding-top: rem(80);
    @include mq('md'){
-<<<<<<< HEAD
      padding-top: rem(100);
-=======
-     padding-top: 10rem;
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
       color:$white  ;
   }
 }
 
 .blog__inner {
-<<<<<<< HEAD
   width: 100%;
   padding-right:rem(21);
   padding-left: rem(21);
@@ -50,15 +41,6 @@
     padding-right: $padding-pc;
     padding-left: $padding-pc;
    position: relative;
-=======
-  padding: 0 2.1rem;
- @include mq('md'){
-  max-width: 116.9rem;
-  width: 100%;
-  padding: 0 $padding-pc;
-  margin: 0 auto;
-  position: relative;
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
  }
   }
 
@@ -120,44 +102,18 @@
   background-image: url(/images/kingyohanadai_blog-PC.png) ;
   background-size:cover;
   max-width: 100%;
-<<<<<<< HEAD
   width: rem(437);
   height: rem(201);
   top: rem(-224);
   left: rem(-56);
-=======
-  width: 43.7rem;
-  height: 20.1rem;
-  top: -22rem;
-  left: -4rem;
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
 }
 }
 
 
 .blog__button{
   text-align: center;
-<<<<<<< HEAD
   margin-top: rem(36.48);
    @include mq('md'){
       margin-top: rem(78);
-=======
-  margin-top: 4rem;
-   @include mq('md'){
-      margin-top: 7.8rem;
-     }
-}
-
-.blog__background-image{//微調整が必要
-  display: none;
-  @include mq('md'){
-    display: block;
-    position: absolute;
-    top: -2;
-    left: 0 ;
-    max-width: 100%;
-    width: 19.4rem;
-    aspect-ratio: 437/201;
->>>>>>> 64d965be324e45622a2cfc6419642c293c087821
      }
 }
