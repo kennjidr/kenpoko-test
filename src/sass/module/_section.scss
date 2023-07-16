@@ -54,10 +54,18 @@
   font-size: rem(12);
   color: $accent-color;
   font-weight: $normal;
+<<<<<<< HEAD
   line-height: rem(18);
   margin-top: rem(4);
   @include mq('md') {
     color: $white;
     margin-top: rem(10.4);
+=======
+  line-height: 1.8rem;
+  margin-top: 0.4rem;
+  @include mq('md') {
+    color: $white;
+    margin-top: 1.04rem;
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821
   }
 }

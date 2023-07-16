@@ -42,8 +42,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         });
       }
     });
+<<<<<<< HEAD
 
 
+=======
+
+
+
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821
   
   //ドロワーメニュー
   $("#MenuButton").click(function () {
@@ -83,16 +89,27 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   //inview
+<<<<<<< HEAD
   //要素の取得とアニメーションスピードの設定
+=======
+  //要素の取得とスピードの設定
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821
   var box = $('.colorbox'),
     speed = 700;
 
   //.colorboxクラスに下記処理を行う
   box.each(function () {
+<<<<<<< HEAD
     $(this).append('<div class="colorbox-image"></div>')//.colorboxに<div class="colorbox-image"></div>を付与
     var color = $(this).find($('.colorbox-image')),
       image = $(this).find('img');//追加した<div class="colorbox-image"></div>と<img>要素を取得します
     var counter = 0;//counterがゼロのときに動き出す。ここで稼働回数を変更できる。
+=======
+    $(this).append('<div class="colorbox-image"></div>')
+    var color = $(this).find($('.colorbox-image')),
+      image = $(this).find('img');
+    var counter = 0;
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821
 
     image.css('opacity', '0');//画層を透明にする。
     color.css('width', '0%');//color要素の幅を0%に設定します。
@@ -145,4 +162,8 @@ var mySwiper = new Swiper('.campaign__swiper-container', {
       spaceBetween: 40,
     }
   },
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821

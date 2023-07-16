@@ -19,6 +19,7 @@
 }
 
 .main-visual-title {
+<<<<<<< HEAD
 font-size: rem(40);
 letter-spacing: rem(21.6);
 font-family: $price-font-family;
@@ -27,6 +28,16 @@ font-family: $price-font-family;
     line-height: rem(100);
     letter-spacing: rem(43.2);
     padding-left: rem(28);
+=======
+font-size: 4rem;
+letter-spacing: 2.16rem;
+font-family: $price-font-family;
+ @include mq('md'){
+    font-size: 8rem;
+    line-height: 10rem;
+    letter-spacing: 4.32rem;
+    padding-left: 2.8rem;
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821
    }
 }
 
@@ -34,10 +45,19 @@ font-family: $price-font-family;
   font-size: rem(20);
   font-family: $second-font-family;
   text-align: center;
+<<<<<<< HEAD
   padding-right:rem(21.5);
    @include mq('md'){
     padding-right: rem(15);
    }
+=======
+  padding-right:2.15rem ;
+   @include mq('md'){
+    padding-right: 1.5rem;
+      
+     }
+
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821
 }
 
 

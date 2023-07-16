@@ -3,6 +3,7 @@
 //全体にリンクをかけたい
 //ボタンバーツをテキスト+ボックス。
 //疑似要素①ずらしたボックスを作る、疑似要素②矢印パーツを作成する。
+<<<<<<< HEAD
 
 // .button__box{
 // position: relative;
@@ -210,3 +211,129 @@
   border-bottom: 1px solid $accent-color;
   border-right: 1px solid $accent-color;
 }
+=======
+
+// .button__box{
+// position: relative;
+// z-index: 2;
+// }
+
+// .button{//テキスト　疑似要素
+//   display: inline-block;
+//   font-size: 1.4rem;
+//   font-weight: $normal;
+//   color: $white;
+//   font-family: $second-font-family;
+//   font-style: normal;
+//   padding: 1.6rem 8.8rem 1.6rem 4rem ;
+//   line-height: 2.2rem;
+//   background-color: $accent-color;
+//   transition: all 0.3s ease 0s;
+//   text-align: center;
+//   position: relative;
+//   border: 1px solid $accent-color;
+
+// }
+
+// .button::before {//ずらしたボックスを配置
+//   border: 0.0625rem solid #408F95;
+//   content: "";
+//   display: inline-block;
+//   height: 5.875rem;
+//   left: 0.25rem;
+//   position: absolute;
+//   top: 0.25rem;
+//   width: 20.125rem;
+//   z-index: -1;
+// }
+
+//   .button:hover {
+//    color: $accent-color;
+//    background-color: $white;
+//    z-index: 2;
+//   }
+
+
+// .button::after{//矢印の実装
+//   content: '';
+//   position: absolute;
+//   display: inline-block;
+//   top: 44%;
+//   right:15%;
+//   width: 40px;
+//   height: 0.5rem;
+//   border-bottom: 1px solid $white;
+//   border-right: 1px solid $white;
+//   transform: skew(45deg);
+// }
+
+// .button:hover::after {
+//   border-bottom: 1px solid $accent-color;
+//   border-right: 1px solid $accent-color;
+//  }
+ 
+// .button:hover::before {
+//   z-index: -2; /* ホバー時に疑似要素をさらに背面に配置 */
+// }
+
+
+.button__box {
+  position: relative;
+  z-index: 2;
+}
+
+.button {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: $normal;
+  color: $white;
+  font-family: $second-font-family;
+  font-style: normal;
+  padding: 1.6rem 9.3rem 1.6rem 4.0rem;
+  line-height: 2.2rem;
+  background-color: $accent-color;
+  transition: all 0.3s ease 0s;
+  text-align: center;
+  position: relative;
+  border: 1px solid $accent-color;
+}
+
+.button__text {
+  position: relative;
+}
+
+.button__border {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 100%;
+  height: 100%;
+  border: 0.0625rem solid #408F95;
+  z-index: -1;
+}
+
+.button:hover {
+  color: $accent-color;
+  background-color: $white;
+  opacity: 1;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 44%;
+  right: 21%;
+  width: 3.9rem;
+  height: 0.5rem;
+  border-bottom: 1px solid $white;
+  border-right: 1px solid $white;
+  transform: skew(45deg);
+}
+
+
+.button:hover::after {
+  border-bottom: 1px solid $accent-color;
+  border-right: 1px solid $accent-color;
+}
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821

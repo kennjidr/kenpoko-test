@@ -2,25 +2,43 @@
 
 .footer {
   background-color: $accent-color;
+<<<<<<< HEAD
   margin-top: rem(100);
    @include mq('md'){
     margin-top: rem(160);
+=======
+  margin-top: 10rem;
+   @include mq('md'){
+    margin-top: 15.5rem;
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821
     
     }
 }
 .footer__inner {
   max-width: rem(500);//半端サイズの調整
    @include mq('md'){
+<<<<<<< HEAD
   }
+=======
+    width: 108rem;
+    max-width: 100%;
+   }
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821
 }
 
 .logo__block{
    @include mq('md'){
      display: flex;
      align-items: flex-end;
+<<<<<<< HEAD
      margin-top: rem(18);
     //  margin-bottom: rem(-15);
     //  margin-left:rem(-15);
+=======
+     margin-top: 1.8rem;
+     margin-bottom: -1.5rem;
+     margin-left:-1.5rem;
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821
      }
 }
 .footer__logo {
@@ -29,21 +47,34 @@
    @include mq('md'){
       width: rem(200);
       max-width: 100%;
+<<<<<<< HEAD
       margin-right:rem(15) ;
+=======
+      margin-right:1.5rem ;
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821
      }
 }
 .head__logo {
   display: block;
   padding-top: rem(48);
   @include mq('md'){
+<<<<<<< HEAD
       margin-right: rem(40);
       padding-top: rem(78);
+=======
+      margin-right: 4rem;
+      padding-top: 7.8rem;
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821
      }
 }
 
 .footer__sns-icon {
   display: flex;
+<<<<<<< HEAD
   margin-top: rem(17);
+=======
+  margin-top: 1.7rem;
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821
    @include mq('md'){
     margin-top: rem(0);
     margin-bottom: rem(5);
@@ -53,9 +84,15 @@
 .icon-facebook {
 max-width: rem(24);
 width: 100%;
+<<<<<<< HEAD
 margin-right: rem(15);
  @include mq('md'){
   max-width: rem(32);
+=======
+margin-right: 1.5rem;
+ @include mq('md'){
+  max-width: 3.2rem;
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821
   width: 100%;
  }
 }
@@ -64,15 +101,23 @@ margin-right: rem(15);
 max-width: rem(24);
 width: 100%;
  @include mq('md'){
+<<<<<<< HEAD
   max-width: rem(32);
+=======
+  max-width: 3.2rem;
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821
   width: 100%;
    }
 }
 
 .footer-menu {
+<<<<<<< HEAD
    @include mq('md'){
 
      }
+=======
+
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821
 }
 
 .navigation__menu {
@@ -82,7 +127,11 @@ width: 100%;
   font-weight: $normal;
   display: flex;
   justify-content: space-between;//marjin 0 auto;で中央寄せができず、flex:centerは感覚が狭い。
+<<<<<<< HEAD
   margin-right: rem(10);
+=======
+ 
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821
    @include mq('md'){
      justify-content: normal ;
      margin-right: rem(0);
@@ -93,11 +142,19 @@ width: 100%;
 .navigation_menu-title{
   font-size: rem(16);
   font-weight: $bold;
+<<<<<<< HEAD
   line-height: rem(18);
   margin-top: rem(38);
    @include mq('md'){
     margin-top: rem(12);
   }
+=======
+  line-height: 1.8rem;
+  margin-top: 3.8rem;
+   @include mq('md'){
+      
+     }
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821
 }
 
 .navigation_menu-title::before {
@@ -172,32 +229,52 @@ width: 100%;
 
 .navigation__menu-coulmn-first{
    @include mq('md'){
+<<<<<<< HEAD
     width: rem(210);
     margin-right: rem(78);
     margin-top: rem(12);
 
+=======
+    width: 21rem;
+    margin-right: 8rem;
+    margin-left: -1.5rem;
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821
 }
 }
 .navigation__menu-coulmn-second {
   @include mq('md'){
+<<<<<<< HEAD
     width: rem(210);
     margin-right: rem(60);
     margin-top: rem(12);
+=======
+    width: 21rem;
+    margin-right: 6rem;
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821
    }
 
 }
 .navigation__menu-coulmn-third {
   @include mq('md'){
+<<<<<<< HEAD
     width: rem(210);
     margin-right:rem(60);
     margin-top: rem(12);
+=======
+    width: 21rem;
+    margin-right: 6rem;
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821
   }
 
 }
 .navigation__menu-coulmn-fourth {
   @include mq('md'){
+<<<<<<< HEAD
     width: rem(194);
     margin-top: rem(12);
+=======
+    width: 21rem;
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821
   }
 }
 .navigation__menu-privacy-policy{
@@ -233,6 +310,7 @@ width: 100%;
  color: $white;
  line-height: rem(18);
  text-align: center;
+<<<<<<< HEAD
  margin-top: rem(40);
  padding: 0 rem(14);
  padding-bottom: rem(56);
@@ -241,5 +319,17 @@ width: 100%;
     font-size: rem(14);
     margin-top: rem(76.8);
     padding-bottom: rem(80)
+=======
+ margin-top: 4rem;
+ padding: 0 1.4rem;
+ padding-bottom: 5.6rem;
+ letter-spacing: 0.037rem;
+ @include mq('md'){
+    font-size: 1.4rem;
+    margin-top: 8rem;
+    padding-bottom:8rem
+
+
+>>>>>>> 64d965be324e45622a2cfc6419642c293c087821
    };
 }
